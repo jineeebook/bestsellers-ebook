@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>전자책 일간 베스트셀러 비교</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Kyobo Design System tokens */
+    --blue:#5055B1;      /* UI 기본 · 강조 (Informative/Accent) */
+    --green:#4DAC27;     /* 긍정 · 성공 (Positive) → 상승/급등 */
+    --red:#EC1F2D;       /* 부정 (Negative) → 하락 */
+    --green-bg:rgba(77,172,39,.08);
+    --ink:#1A1A1A;
+    --ink-2:#666666;
+    --ink-3:#999999;
+    --line:#EBEBEB;
+    --line-2:#F0F0F0;
+    --bg:#FFFFFF;
+    --bg-soft:#F7F8FA;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+  body{
+    font-family:'Noto Sans KR',sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    letter-spacing:-0.01em;
+    line-height:1.5;
+    padding:0 0 80px;
+  }
+  /* 숫자/영문은 Roboto 우선 (KDS) */
+  .num{font-family:'Roboto','Noto Sans KR',sans-serif;font-feature-settings:"tnum"}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+  /* ---------- Header ---------- */
+  header{padding:40px 0 0}
+  .crumb{font-size:13px;color:var(--ink-3);font-weight:500;margin-bottom:14px}
+  .crumb b{color:var(--ink-2);font-weight:500}
+  .title-row{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-bottom:22px;border-bottom:2px solid var(--ink)}
+  h1{font-size:32px;line-height:44px;font-weight:700;letter-spacing:-0.02em}
+  h1 .accent{color:var(--blue)}
+  .dateline{text-align:right;flex-shrink:0}
+  .dateline .today{font-family:'Roboto',sans-serif;font-weight:700;font-size:22px;letter-spacing:0}
+  .dateline .vs{font-size:13px;color:var(--ink-2);margin-top:3px}
+  .date-nav{display:inline-flex;align-items:center;gap:4px;justify-content:flex-end}
+  .date-arrow{font-family:'Roboto',sans-serif;font-size:20px;line-height:1;color:var(--ink-3);background:none;border:none;
+    cursor:pointer;padding:2px 6px;border-radius:6px;transition:background .12s,color .12s}
+  .date-arrow:hover:not(:disabled){background:var(--line);color:var(--ink)}
+  .date-arrow:disabled{opacity:.28;cursor:default}
+  button.today{background:none;border:none;cursor:pointer;padding:0 2px;color:inherit;border-bottom:1px dashed transparent;transition:border-color .12s}
+  button.today:hover{border-bottom-color:var(--ink-3)}
+  .date-input-hidden{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+  .back-today{margin-top:6px;font-family:inherit;font-size:12px;font-weight:600;color:var(--blue);background:var(--blue-bg,rgba(0,128,255,.08));
+    border:1px solid var(--blue);border-radius:7px;padding:4px 10px;cursor:pointer}
+  .back-today:hover{background:var(--blue);color:#fff}
+  .past-badge{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:var(--ink-2);border-radius:5px;padding:1px 7px;margin-left:6px;vertical-align:middle}
+  .sample-tag{display:inline-block;margin-top:9px;font-size:11px;font-weight:500;color:var(--ink-3);background:var(--bg-soft);border:1px solid var(--line);padding:3px 9px;border-radius:4px}
+
+  /* ---------- Controls ---------- */
+  .controls{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:22px 0 6px}
+  .controls-right{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-left:auto}
+  .tabs{display:flex;gap:4px}
+  .tabs button{font-family:inherit;font-size:15px;font-weight:500;letter-spacing:-0.01em;border:none;background:none;color:var(--ink-2);padding:9px 4px;margin-right:18px;cursor:pointer;position:relative;transition:.15s}
+  .tabs button.active{color:var(--blue);font-weight:700}
+  .tabs button.active::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:2px;background:var(--blue)}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--ink-2);align-items:center}
+  .legend span{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+  .excel-btn{border:1px solid var(--green);color:var(--green);background:#fff;font-family:inherit;font-size:13px;font-weight:700;
+    padding:7px 14px;border-radius:8px;cursor:pointer;white-space:nowrap;transition:background .15s,color .15s;display:inline-flex;align-items:center;gap:6px}
+  .excel-btn:hover{background:var(--green);color:#fff}
+  .excel-btn:disabled{opacity:.4;cursor:default}
+  .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+  .chip{font-family:'Roboto',sans-serif;font-weight:700;font-size:11px;padding:1px 6px;border-radius:3px;letter-spacing:0;line-height:1.5}
+  .chip.surge{background:var(--green);color:#fff}
+  .chip.new{background:var(--blue);color:#fff}
+
+  /* ---------- Category bar ---------- */
+  .cat-bar{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;padding-bottom:2px}
+  .cat-bar button{font-family:inherit;font-size:13.5px;font-weight:500;letter-spacing:-0.01em;
+    border:1px solid var(--line);background:var(--bg);color:var(--ink-2);
+    padding:7px 15px;border-radius:99px;cursor:pointer;transition:.15s;white-space:nowrap}
+  .cat-bar button:hover{border-color:var(--ink-3);color:var(--ink)}
+  .cat-bar button.active{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:700}
+  .cat-empty{padding:48px 16px;text-align:center;color:var(--ink-3);font-size:14px;
+    border:1px dashed var(--line);border-radius:8px}
+  /* 서점 컬럼 안 안내문구 (데이터 0일 때 빈칸 대신) */
+  .col-msg{padding:40px 18px;text-align:center;font-size:13.5px;line-height:1.6;color:var(--ink-3)}
+  .col-msg.col-err{color:var(--red)}
+  .col-msg .col-msg-sub{display:block;margin-top:6px;font-size:12px;color:var(--ink-3)}
+  @media(max-width:860px){
+    .cat-bar{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+      margin-left:-24px;margin-right:-24px;padding:0 24px 6px}
+    .cat-bar button{flex:0 0 auto}
+  }
+
+  /* ---------- Store columns ---------- */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+  .col{background:var(--bg);border:1px solid var(--line);border-radius:8px;overflow:hidden;opacity:0;transform:translateY(10px);animation:rise .5s ease forwards}
+  .col:nth-child(1){animation-delay:.04s}
+  .col:nth-child(2){animation-delay:.1s}
+  .col:nth-child(3){animation-delay:.16s}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .col-head{padding:18px 20px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+  .col-head .name{font-size:18px;font-weight:700;letter-spacing:-0.02em}
+  .col-head .cnt{font-family:'Roboto',sans-serif;font-size:12px;font-weight:500;color:var(--ink-3)}
+
+  ul{list-style:none}
+  .row{display:flex;align-items:center;gap:14px;padding:13px 20px;border-bottom:1px solid var(--line-2);position:relative}
+  .row:last-child{border-bottom:none}
+  .row.surge{background:var(--green-bg);box-shadow:inset 3px 0 0 var(--green)}
+  .rank{font-family:'Roboto',sans-serif;font-weight:700;font-size:20px;width:26px;text-align:center;flex-shrink:0;color:var(--ink-2);letter-spacing:0}
+  .row:nth-child(-n+3) .rank{color:var(--blue);font-weight:900}
+  .info{flex:1;min-width:0}
+  .bk-title{font-size:15px;font-weight:500;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bk-meta{font-size:12px;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:3px;display:flex;align-items:center;gap:6px}
+  .bk-ship{font-size:11px;color:var(--ink-3);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-0.01em}
+  .move{flex-shrink:0;text-align:right;min-width:50px;display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+  .arrow{font-family:'Roboto',sans-serif;font-weight:700;font-size:13px;letter-spacing:0;display:inline-flex;align-items:center;gap:1px}
+  .arrow.up{color:var(--green)} .arrow.down{color:var(--red)} .arrow.same{color:var(--ink-3);font-weight:500}
+  .cross{font-size:10px;font-weight:500;color:var(--blue);background:rgba(80,85,177,.08);border-radius:3px;padding:1px 5px;flex-shrink:0}
+
+  /* ---------- Merged view ---------- */
+  #merged{display:none;margin-top:18px}
+  .mtable{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:8px;overflow:hidden;border-collapse:collapse;table-layout:fixed}
+  .mtable thead th{font-size:12px;font-weight:500;color:var(--ink-2);text-align:center;padding:15px 8px;border-bottom:2px solid var(--ink);background:var(--bg-soft)}
+  .mtable thead th.l{text-align:left;padding-left:20px}
+  .mtable thead th:nth-child(1){width:56px}
+  .mtable thead th:nth-child(3),.mtable thead th:nth-child(4),.mtable thead th:nth-child(5){width:108px}
+  .mtable thead th.opt{width:64px}
+  .mtable tbody td{padding:14px 8px;border-bottom:1px solid var(--line-2);text-align:center;vertical-align:middle}
+  .mtable tbody tr:last-child td{border-bottom:none}
+  .mtable tbody tr.surge{background:var(--green-bg)}
+  .mtable tbody tr.surge td:first-child{box-shadow:inset 3px 0 0 var(--green)}
+  .m-overall{font-family:'Roboto',sans-serif;font-weight:900;font-size:18px;color:var(--blue);letter-spacing:0;width:54px}
+  .m-book{text-align:center;padding:14px 12px}
+  .m-book .bk-title{white-space:normal;font-weight:500;text-align:center;display:block;line-height:1.35}
+  .m-book .bk-meta{margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;display:block}
+
+  /* ---------- 순위 히스토리 팝업 ---------- */
+  .bk-clickable{cursor:pointer;transition:background .12s}
+  .bk-clickable:hover{background:var(--bg-soft)}
+  .bk-modal{display:none;position:fixed;inset:0;z-index:100;background:rgba(20,22,40,.45);
+    align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(2px)}
+  .bk-card{background:var(--bg);border-radius:14px;width:100%;max-width:640px;
+    box-shadow:0 24px 60px rgba(0,0,0,.25);padding:26px 26px 22px;position:relative;
+    animation:pop .18s ease}
+  @keyframes pop{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+  .bk-close{position:absolute;top:14px;right:16px;border:none;background:none;font-size:26px;
+    line-height:1;color:var(--ink-3);cursor:pointer;padding:2px 6px}
+  .bk-close:hover{color:var(--ink)}
+  .bk-head{padding-right:30px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+  .bk-modal-title{font-size:19px;font-weight:700;line-height:1.35;letter-spacing:-0.02em}
+  .bk-modal-sub{font-size:13px;color:var(--ink-3);margin-top:5px}
+  .bk-controls{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .bk-seg{display:inline-flex;background:var(--bg-soft);border:1px solid var(--line);border-radius:8px;padding:3px}
+  .bk-seg button{font-family:inherit;font-size:12.5px;font-weight:500;color:var(--ink-2);
+    border:none;background:none;padding:6px 13px;border-radius:6px;cursor:pointer;transition:.12s}
+  .bk-seg button:empty{display:none}
+  .bk-seg button.active{background:var(--bg);color:var(--blue);font-weight:700;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+  .bk-seg button:disabled{color:#CFCFCF;cursor:not-allowed}
+  .bk-chart{width:100%}
+  .bk-chart svg{width:100%;height:auto;display:block}
+  .bk-chart-wrap{position:relative}
+  .bk-guide{position:absolute;top:0;width:1px;background:#CFCFCF;pointer-events:none;z-index:4;display:none}
+  .bk-tip{position:absolute;pointer-events:none;background:#fff;border:1px solid var(--line);border-radius:8px;
+    box-shadow:0 4px 16px rgba(0,0,0,.13);padding:8px 11px;font-size:12px;line-height:1.55;white-space:nowrap;
+    transform:translateX(-50%);z-index:5;display:none}
+  .bk-tip .tip-date{font-weight:700;font-family:'Roboto',sans-serif;margin-bottom:3px;color:var(--ink)}
+  .bk-tip .tip-row{display:flex;align-items:center;gap:6px}
+  .bk-tip .tip-row i{width:8px;height:8px;border-radius:50%;display:inline-block;flex:0 0 8px}
+  .bk-empty{padding:48px 16px;text-align:center;color:var(--ink-3);font-size:14px;line-height:1.6}
+  .bk-legend{display:flex;gap:16px;justify-content:center;margin-top:12px;font-size:12.5px;color:var(--ink-2)}
+  .bk-legend span{display:inline-flex;align-items:center;gap:6px}
+  .bk-legend i{width:14px;height:3px;border-radius:2px;display:inline-block}
+  .bk-peak{text-align:center;font-size:12px;color:var(--ink-3);margin-top:2px}
+  .m-cell{display:inline-flex;flex-direction:column;align-items:center;gap:2px;line-height:1.15}
+  .m-cell .nrank{font-family:'Roboto',sans-serif;font-weight:700;font-size:15px;color:var(--ink);letter-spacing:0}
+  .m-cell .sm{font-family:'Roboto',sans-serif;font-size:11px;font-weight:500;letter-spacing:0}
+  .m-cell.up .sm{color:var(--green)} .m-cell.down .sm{color:var(--red)} .m-cell.same .sm{color:var(--ink-3)}
+  .m-ship{font-size:10.5px;color:var(--ink-3);margin-top:3px;line-height:1.25;white-space:nowrap;letter-spacing:-0.02em}
+  .m-na{color:#CFCFCF;font-size:14px}
+  .badges{display:inline-flex;gap:4px;justify-content:center}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-2);line-height:1.8;background:var(--bg-soft);border:1px solid var(--line);border-radius:8px;padding:18px 20px}
+  footer b{color:var(--ink);font-weight:700}
+
+  @media(max-width:860px){
+    /* 서점별 보기: 가로 스와이프 (한 서점씩, 양옆 살짝 보이게) */
+    .grid{
+      display:flex; grid-template-columns:none;
+      overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
+      gap:12px; margin-left:-24px; margin-right:-24px; padding:2px 24px 8px;
+      scrollbar-width:none;
+    }
+    .grid::-webkit-scrollbar{display:none}
+    .col{flex:0 0 86%; scroll-snap-align:center}
+
+    /* 도서별 비교: 표 → 카드형 */
+    .mtable thead{display:none}
+    .mtable,.mtable tbody{display:block;width:100%}
+    .mtable tr{
+      display:grid; grid-template-columns:38px 1fr 1fr 1fr; gap:10px 8px;
+      border:1px solid var(--line); border-radius:10px; background:var(--bg);
+      padding:13px 14px; margin-bottom:12px;
+    }
+    .mtable td{display:block; border:none; padding:0; text-align:left}
+    .m-overall{grid-column:1; grid-row:1/3; align-self:center; width:auto; font-size:19px}
+    .m-book{grid-column:2/5; grid-row:1; padding:0; text-align:left}
+    .m-book .bk-title{text-align:left}
+    .m-book .bk-meta{text-align:left; white-space:normal; overflow:visible; text-overflow:clip}
+    .mtable td:nth-child(3){grid-column:2; grid-row:2}
+    .mtable td:nth-child(4){grid-column:3; grid-row:2}
+    .mtable td:nth-child(5){grid-column:4; grid-row:2}
+    .mtable td:nth-child(n+3){border-top:1px solid var(--line-2); padding-top:8px}
+    .mtable td:nth-child(3)::before{content:"교보 종이책"}
+    .mtable td:nth-child(4)::before{content:"교보 eBook"}
+    .mtable td:nth-child(5)::before{content:"예스24 전자책"}
+    .mtable td:nth-child(n+3)::before{display:block; font-size:11px; font-weight:700; color:var(--ink-3); margin-bottom:5px}
+    .m-cell{align-items:flex-start}
+
+    .dateline{text-align:left}
+    h1{font-size:26px;line-height:36px}
+  }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="crumb">베스트 <b>›</b> 전자책 일간 베스트 <b>›</b> 3사 비교</div>
+    <div class="title-row">
+      <h1>전자책 일간 베스트셀러 <span class="accent">한눈에</span> 비교</h1>
+      <div class="dateline">
+        <div class="date-nav">
+          <button id="date-prev" class="date-arrow" onclick="stepDate(-1)" title="이전 날짜" aria-label="이전 날짜">‹</button>
+          <button id="date-cur" class="today num" onclick="openDatePicker()" title="날짜 선택 (달력)">2026.06.08</button>
+          <button id="date-next" class="date-arrow" onclick="stepDate(1)" title="다음 날짜" aria-label="다음 날짜">›</button>
+          <input type="date" id="date-input" class="date-input-hidden" onchange="onDatePick(this.value)" tabindex="-1" aria-hidden="true">
+        </div>
+        <div class="vs" id="vs-el">전날(06.07) 대비 순위 변동</div>
+        <button id="back-today" class="back-today" onclick="goToday()" style="display:none">↩ 오늘로 돌아가기</button>
+        <div class="sample-tag" id="sample-tag">SAMPLE · 화면 시안용 가짜 데이터</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="tabs">
+      <button id="btn-store" class="active" onclick="setView('store')">서점별 보기</button>
+      <button id="btn-merged" onclick="setView('merged')">도서별 비교</button>
+    </div>
+    <div class="controls-right">
+    <div class="legend">
+      <span><span class="chip surge">급등</span> 4계단 이상 상승</span>
+      <span><span class="chip new">NEW</span> 신규 진입</span>
+      <span><span class="dot" style="background:var(--green)"></span> 상승</span>
+      <span><span class="dot" style="background:var(--red)"></span> 하락</span>
+    </div>
+    <button id="excel-btn" class="excel-btn" onclick="exportExcel()" title="현재 분야를 엑셀로 내려받기">⬇ 엑셀 내려받기</button>
+    </div>
+  </div>
+
+  <div id="cat-bar" class="cat-bar"></div>
+
+  <div id="store" class="grid"></div>
+
+  <div id="merged">
+    <table class="mtable">
+      <thead>
+        <tr>
+          <th>통합</th>
+          <th>도서</th>
+          <th>교보 종이책</th>
+          <th>교보 eBook</th>
+          <th>예스24 전자책</th>
+        </tr>
+      </thead>
+      <tbody id="merged-body"></tbody>
+    </table>
+  </div>
+
+
+</div>
+
+<!-- 도서 순위 히스토리 팝업 -->
+<div id="bk-modal" class="bk-modal" onclick="if(event.target===this)closeBook()">
+  <div class="bk-card">
+    <button class="bk-close" onclick="closeBook()" aria-label="닫기">×</button>
+    <div class="bk-head">
+      <div class="bk-modal-title" id="bk-modal-title"></div>
+      <div class="bk-modal-sub" id="bk-modal-sub"></div>
+    </div>
+    <div class="bk-controls">
+      <div class="bk-seg" id="bk-cat-seg">
+        <button id="bk-cat-all" class="active" onclick="setHistCat('all')">종합</button>
+        <button id="bk-cat-cur" onclick="setHistCat(this.dataset.cat)"></button>
+      </div>
+      <div class="bk-seg bk-period" id="bk-period-seg">
+        <button data-p="7"  class="active" onclick="setHistPeriod(7)">7일</button>
+        <button data-p="30" onclick="setHistPeriod(30)">30일</button>
+        <button data-p="90" onclick="setHistPeriod(90)">90일</button>
+      </div>
+    </div>
+    <div class="bk-chart-wrap" id="bk-chart-wrap">
+      <div class="bk-chart" id="bk-chart"></div>
+      <div class="bk-guide" id="bk-guide"></div>
+      <div class="bk-tip" id="bk-tip"></div>
+    </div>
+    <div class="bk-legend" id="bk-legend"></div>
+  </div>
+</div>
+
+<script>
+let SURGE_GAP = 4; // 급등 기준: N계단 이상 상승
+
+// 서점 정의: key는 data.json / 크롤러와 동일하게 맞춰야 함
+const STORES = [
+  {key:"kyobo_paper", name:"교보문고 종이책"},
+  {key:"kyobo_ebook", name:"교보문고 eBook"},
+  {key:"yes24_ebook", name:"예스24 전자책"},
+];
+
+// 샘플 데이터: prev=null 이면 신규(NEW)  — data.json 이 없을 때 폴백으로 사용
+const SAMPLE_BOOKS = [
+  {isbn:"A01", title:"흐릿한 계절의 기록", author:"김서연", pub:"문학동네",
+    kyobo_paper:{t:1,p:3}, kyobo_ebook:{t:2,p:2}, yes24_ebook:{t:1,p:4}},
+  {isbn:"A02", title:"데이터로 일하는 법", author:"박준호", pub:"한빛미디어",
+    kyobo_paper:{t:2,p:1}, kyobo_ebook:{t:1,p:1}, yes24_ebook:{t:3,p:2}},
+  {isbn:"A03", title:"마음의 위도", author:"이하늘", pub:"창비",
+    kyobo_paper:{t:3,p:null}, kyobo_ebook:{t:5,p:9}, yes24_ebook:{t:2,p:1}},
+  {isbn:"A04", title:"부의 재구성", author:"정민우", pub:"쌤앤파커스",
+    kyobo_paper:{t:4,p:6}, kyobo_ebook:{t:3,p:4}, yes24_ebook:{t:8,p:5}},
+  {isbn:"A05", title:"조용한 혁명", author:"최은영", pub:"민음사",
+    kyobo_paper:{t:5,p:5}, kyobo_ebook:null, yes24_ebook:{t:4,p:12}},
+  {isbn:"A06", title:"하루 10분 영어 습관", author:"다니엘 박", pub:"길벗",
+    kyobo_paper:null, kyobo_ebook:{t:4,p:4}, yes24_ebook:{t:6,p:7}},
+  {isbn:"A07", title:"고요 속의 빛", author:"한지수", pub:"은행나무",
+    kyobo_paper:{t:6,p:null}, kyobo_ebook:{t:8,p:11}, yes24_ebook:null},
+  {isbn:"A08", title:"코드 너머의 사고", author:"윤재민", pub:"인사이트",
+    kyobo_paper:{t:7,p:4}, kyobo_ebook:null, yes24_ebook:{t:5,p:3}},
+  {isbn:"A09", title:"느린 산책", author:"서지우", pub:"김영사",
+    kyobo_paper:null, kyobo_ebook:{t:6,p:14}, yes24_ebook:{t:7,p:6}},
+  {isbn:"A10", title:"경제의 민낯", author:"강태원", pub:"어크로스",
+    kyobo_paper:{t:8,p:7}, kyobo_ebook:{t:7,p:5}, yes24_ebook:null},
+  {isbn:"A11", title:"별빛 도서관", author:"노을", pub:"비채",
+    kyobo_paper:null, kyobo_ebook:{t:9,p:null}, yes24_ebook:{t:9,p:18}},
+  {isbn:"A12", title:"습관의 과학", author:"레나 킴", pub:"웅진지식하우스",
+    kyobo_paper:{t:9,p:8}, kyobo_ebook:null, yes24_ebook:{t:10,p:10}},
+  {isbn:"A13", title:"내일의 날씨", author:"문해린", pub:"마음산책",
+    kyobo_paper:{t:10,p:2}, kyobo_ebook:{t:10,p:6}, yes24_ebook:null},
+];
+
+// ── 카테고리 정의 (교보 기준 통합 분류) ──
+const CAT_DEFS = [
+  {id:"all",     label:"전체"},
+  {id:"novel",   label:"소설"},
+  {id:"essay",   label:"시/에세이"},
+  {id:"human",   label:"인문"},
+  {id:"social",  label:"정치/사회"},
+  {id:"history", label:"역사/문화"},
+  {id:"science", label:"과학"},
+  {id:"econ",    label:"경제/경영"},
+  {id:"self",    label:"자기계발"},
+  {id:"art",     label:"예술/대중문화"},
+];
+
+// ── 샘플 데이터셋: '전체'는 13권, 나머지 카테고리는 결정적으로 재구성 ──
+function seeded(str){let h=2166136261;for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;}
+function buildSampleDataset(){
+  const data = { all: { books: SAMPLE_BOOKS } };
+  const storeKeys = STORES.map(s=>s.key);
+  CAT_DEFS.filter(c=>c.id!=="all").forEach(c=>{
+    const picks = SAMPLE_BOOKS.filter(b => seeded(b.title+c.id)%10 < 7)
+      .map(b => { const nb={isbn:b.isbn,title:b.title,author:b.author,pub:b.pub}; storeKeys.forEach(k=>nb[k]=null); return nb; });
+    storeKeys.forEach(s=>{
+      const present = picks.filter(b => seeded(b.title+c.id+s)%3 !== 0);
+      present.sort((a,b)=> seeded(a.title+c.id+s+"o")%1000 - seeded(b.title+c.id+s+"o")%1000);
+      present.forEach((b,i)=>{
+        const t = i+1;
+        const pr = seeded(b.title+c.id+s+"p")%6;        // 0 → 신규(NEW)
+        b[s] = {t, p: pr===0 ? null : Math.max(1, t + (seeded(b.title+c.id+s+"d")%9 - 4))};
+      });
+    });
+    data[c.id] = { books: picks.filter(b => storeKeys.some(k=>b[k])) };
+  });
+  // 미리보기용 배송 샘플(결정적) — 실제 data.json 로드 시엔 덮어써져 사용 안 됨
+  const SHIP = ["당일 이용 가능", "다운로드 즉시", "당일 이용 가능", "", ""];
+  Object.values(data).forEach(cat=>{
+    cat.books.forEach(b=>{
+      storeKeys.forEach(s=>{
+        if(b[s]) b[s].ship = SHIP[seeded(b.title+s+"ship")%SHIP.length];
+      });
+    });
+  });
+  return data;
+}
+
+let CATEGORIES = CAT_DEFS;
+let DATASET = buildSampleDataset();   // data.json 로드 성공 시 교체됨
+let currentCat = "all";
+let books = DATASET.all.books;        // 현재 카테고리의 책 목록
+
+function storeCount(b){return STORES.filter(s=>b[s.key]).length;}
+
+// 화면 표시 개수 제한: 전체 50, 분야별 30
+function viewLimit(){ return currentCat === "all" ? 50 : 30; }
+
+function movement(rank){
+  if(!rank) return null;
+  if(rank.p===null) return {type:"new", diff:null, surge:rank.t<=10};
+  const diff = rank.p - rank.t;          // +면 상승
+  const type = diff>0?"up":diff<0?"down":"same";
+  return {type, diff, surge:diff>=SURGE_GAP};
+}
+
+function moveLabel(m){
+  if(!m) return "";
+  if(m.type==="new") return `<span class="chip new">NEW</span>`;
+  if(m.type==="same") return `<span class="arrow same">–</span>`;
+  const ar = m.type==="up"?"▲":"▼";
+  return `<span class="arrow ${m.type}">${ar}${Math.abs(m.diff)}</span>`;
+}
+
+/* ----- 서점별 ----- */
+// 서점이 데이터셋 전체에서 데이터를 하나라도 갖고 있는지
+// (전 분야 0 = 수집 실패/차단,  특정 분야만 0 = 그 서점 미제공 분야)
+function storeHasAnyData(key){
+  return Object.values(DATASET).some(cat => (cat.books||[]).some(b => b[key]));
+}
+
+function renderStores(){
+  const grid = document.getElementById("store");
+  grid.innerHTML = "";
+  STORE_BOOKS = [];
+  STORES.forEach(s=>{
+    const items = books.filter(b=>b[s.key]).sort((a,b)=>a[s.key].t-b[s.key].t).slice(0, viewLimit());
+    let inner, cntLabel;
+    if(items.length === 0){
+      cntLabel = "–";
+      if(!storeHasAnyData(s.key)){
+        // 전 분야 0 → 수집 실패/일시 차단
+        inner = `<div class="col-msg col-err">⚠️ ${s.name} 데이터를 불러오지 못했습니다
+          <span class="col-msg-sub">일시적인 오류입니다. 다음 수집 때 다시 채워집니다.</span></div>`;
+      } else {
+        // 이 분야만 0 → 그 서점이 해당 분야를 제공하지 않음
+        inner = `<div class="col-msg">이 분야는 ${s.name}에서 제공하지 않습니다</div>`;
+      }
+    } else {
+      let rows = "";
+      items.forEach(b=>{
+        const m = movement(b[s.key]);
+        const surge = m && m.surge;
+        const cross = storeCount(b)>=2 ? `<span class="cross">${storeCount(b)}사</span>` : "";
+        const bi = STORE_BOOKS.push(b)-1;
+        rows += `
+          <li class="row bk-clickable ${surge?'surge':''}" onclick="openBook(STORE_BOOKS[${bi}])">
+            <div class="rank num">${b[s.key].t}</div>
+            <div class="info">
+              <div class="bk-title">${b.title}</div>
+              <div class="bk-meta">${b.author} · ${b.pub} ${cross}</div>
+              ${b[s.key].ship ? `<div class="bk-ship">${b[s.key].ship}</div>` : ''}
+            </div>
+            <div class="move">
+              ${surge?'<span class="chip surge">급등</span>':''}
+              ${moveLabel(m)}
+            </div>
+          </li>`;
+      });
+      inner = `<ul>${rows}</ul>`;
+      cntLabel = `TOP ${items.length}`;
+    }
+    grid.insertAdjacentHTML("beforeend", `
+      <div class="col">
+        <div class="col-head">
+          <span class="name">${s.name}</span>
+          <span class="cnt num">${cntLabel}</span>
+        </div>
+        ${inner}
+      </div>`);
+  });
+}
+
+/* ----- 통합 ----- */
+function avgRank(b){
+  const rs = STORES.map(s=>b[s.key]?b[s.key].t:null).filter(x=>x!==null);
+  return rs.reduce((a,c)=>a+c,0)/rs.length;
+}
+function mCell(rank){
+  if(!rank) return `<span class="m-na">–</span>`;
+  const m = movement(rank);
+  let sm;
+  if(m.type==="new") sm=`<span class="sm" style="color:var(--blue)">NEW</span>`;
+  else if(m.type==="same") sm=`<span class="sm">–</span>`;
+  else sm=`<span class="sm">${m.type==="up"?"▲":"▼"}${Math.abs(m.diff)}</span>`;
+  const shipHtml = rank.ship ? `<span class="m-ship">${rank.ship}</span>` : '';
+  return `<span class="m-cell ${m.type}"><span class="nrank">${rank.t}</span>${sm}${shipHtml}</span>`;
+}
+function renderMerged(){
+  const body = document.getElementById("merged-body");
+  body.innerHTML="";
+  const sorted = [...books].sort((a,b)=>avgRank(a)-avgRank(b)).slice(0, viewLimit());
+  MERGED_BOOKS = sorted;
+  sorted.forEach((b,i)=>{
+    const anySurge = STORES.some(s=>{const m=movement(b[s.key]); return m&&m.surge;});
+    const storeTds = STORES.map(s=>`<td>${mCell(b[s.key])}</td>`).join('');
+    body.insertAdjacentHTML("beforeend",`
+      <tr class="bk-clickable ${anySurge?'surge':''}" onclick="openBook(MERGED_BOOKS[${i}])">
+        <td class="m-overall">${i+1}</td>
+        <td class="m-book"><div class="bk-title">${b.title}</div><div class="bk-meta">${b.author} · ${b.pub}</div></td>
+        ${storeTds}
+      </tr>`);
+  });
+}
+let MERGED_BOOKS = [];
+let STORE_BOOKS = [];
+
+// ---------- 순위 히스토리 팝업 ----------
+const HIST_COLORS = {kyobo_paper:"#4DAC27", kyobo_ebook:"#0080FF", yes24_ebook:"#F21C8C"};
+let HISTORY = null;                       // null=미로드, false=없음, obj=로드됨
+let histState = {book:null, cat:"all", period:7, data:null};
+
+async function loadHistory(){
+  if(HISTORY!==null) return HISTORY;
+  try{
+    const r = await fetch("./history.json?v="+Date.now(),{cache:"no-store"});
+    HISTORY = r.ok ? await r.json() : false;
+  }catch(e){ HISTORY = false; }
+  return HISTORY;
+}
+function dateSpanDays(dates){
+  return dates.length<2 ? 0 : (new Date(dates[dates.length-1]) - new Date(dates[0]))/86400000;
+}
+
+async function openBook(book){
+  if(!book) return;
+  document.getElementById("bk-modal-title").textContent = book.title||"";
+  document.getElementById("bk-modal-sub").textContent = [book.author,book.pub].filter(Boolean).join(" · ");
+  histState = {book, cat:"all", period:7, data:null};
+  document.getElementById("bk-modal").style.display="flex";
+  const h = await loadHistory();
+  histState.data = (h && book.hkey) ? (h.books[book.hkey]||null) : null;
+  // 카테고리 토글: '현재 분야' 버튼 표시 여부
+  const curBtn = document.getElementById("bk-cat-cur");
+  const curCat = CATEGORIES.find(c=>c.id===currentCat);
+  const hasCur = histState.data && currentCat!=="all" && histState.data.series[currentCat];
+  if(hasCur){ curBtn.textContent=curCat?curCat.label:currentCat; curBtn.dataset.cat=currentCat; curBtn.style.display=""; }
+  else { curBtn.style.display="none"; }
+  // 기간탭: 데이터 범위에 따라 활성/비활성
+  if(h){
+    const span=dateSpanDays(h.dates);
+    document.querySelector('#bk-period-seg [data-p="30"]').disabled = span<=7;
+    document.querySelector('#bk-period-seg [data-p="90"]').disabled = span<=30;
+  }
+  // 기간 버튼도 7일로 초기화(이전 팝업에서 30/90 눌렀던 하이라이트가 남지 않도록)
+  document.querySelectorAll('#bk-period-seg button').forEach(b=>b.classList.toggle("active", +b.dataset.p===7));
+  setHistCat("all");
+}
+function closeBook(){ document.getElementById("bk-modal").style.display="none"; }
+
+function setHistCat(cat){
+  histState.cat=cat;
+  document.getElementById("bk-cat-all").classList.toggle("active", cat==="all");
+  document.getElementById("bk-cat-cur").classList.toggle("active", cat!=="all");
+  renderHist();
+}
+function setHistPeriod(p){
+  histState.period=p;
+  document.querySelectorAll('#bk-period-seg button').forEach(b=>b.classList.toggle("active", +b.dataset.p===p));
+  renderHist();
+}
+
+function renderHist(){
+  const box=document.getElementById("bk-chart"), leg=document.getElementById("bk-legend");
+  const bk=histState.data;
+  if(!HISTORY || !bk){
+    box.innerHTML=`<div class="bk-empty">아직 순위 히스토리가 없어요.<br>매일 자동 수집되며 점점 쌓여요 📈</div>`;
+    leg.innerHTML=""; return;
+  }
+  const allDates=HISTORY.dates;
+  const cutoff=new Date(allDates[allDates.length-1]);
+  cutoff.setDate(cutoff.getDate()-(histState.period-1));
+  const picked=allDates.map((d,i)=>({d,i})).filter(o=> new Date(o.d)>=cutoff);
+  const dates=picked.map(o=>o.d), idxs=picked.map(o=>o.i);
+  const series=bk.series[histState.cat]||{};
+  box.innerHTML=chartSVG(dates, idxs, series);
+  attachChartHover();
+  let allVals=[];
+  let legHtml=STORES.map(s=>{
+    const vals=idxs.map(i=>(series[s.key]||[])[i]).filter(v=>v!=null);
+    allVals=allVals.concat(vals);
+    return `<span><i style="background:${HIST_COLORS[s.key]}"></i>${s.name}</span>`;
+  }).join("");
+  const peak=allVals.length?Math.min(...allVals):null;
+  leg.innerHTML=legHtml + (peak!=null?`<span class="bk-peak">최고 ${peak}위</span>`:"");
+}
+
+function segPath(pts){
+  return pts.map((p,i)=>(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ")+" ";
+}
+function chartSVG(dates, idxs, series){
+  const W=620,H=290,pad={l:34,r:14,t:16,b:30};
+  const iw=W-pad.l-pad.r, ih=H-pad.t-pad.b, n=dates.length;
+  let maxRank=10;
+  STORES.forEach(s=>(series[s.key]||[]).forEach((v,i)=>{ if(v&&idxs.indexOf(i)>=0) maxRank=Math.max(maxRank,v); }));
+  const yMax=Math.max(10, Math.ceil(maxRank/10)*10);
+  const X=i=> n<=1?pad.l+iw/2 : pad.l+iw*i/(n-1);
+  const Y=r=> pad.t+ih*(r-1)/(yMax-1);
+  const yt=[1, Math.round(yMax/3), Math.round(2*yMax/3), yMax].filter((v,i,a)=>a.indexOf(v)===i);
+  let g="";
+  yt.forEach(r=>{ g+=`<line x1="${pad.l}" y1="${Y(r).toFixed(1)}" x2="${W-pad.r}" y2="${Y(r).toFixed(1)}" stroke="#EEEEEE"/>`
+    +`<text x="${pad.l-7}" y="${(Y(r)+3).toFixed(1)}" text-anchor="end" font-size="10" fill="#AAAAAA" font-family="Roboto,sans-serif">${r}</text>`; });
+  const step=Math.max(1,Math.ceil(n/6));
+  let xl="";
+  dates.forEach((d,pos)=>{ if(pos%step===0||pos===n-1) xl+=`<text x="${X(pos).toFixed(1)}" y="${H-10}" text-anchor="middle" font-size="9.5" fill="#AAAAAA" font-family="Roboto,sans-serif">${d.slice(5)}</text>`; });
+  let lines="";
+  STORES.forEach(s=>{
+    const arr=series[s.key]||[], col=HIST_COLORS[s.key];
+    let seg=[], path="";
+    idxs.forEach((origIdx,pos)=>{
+      const v=arr[origIdx];
+      if(v==null){ if(seg.length){ path+=segPath(seg); seg=[]; } }
+      else seg.push([X(pos),Y(v)]);
+    });
+    if(seg.length) path+=segPath(seg);
+    if(path) lines+=`<path d="${path}" fill="none" stroke="${col}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>`;
+    idxs.forEach((origIdx,pos)=>{ const v=arr[origIdx]; if(v!=null) lines+=`<circle cx="${X(pos).toFixed(1)}" cy="${Y(v).toFixed(1)}" r="3.4" fill="#fff" stroke="${col}" stroke-width="2"/>`; });
+  });
+  CHART_META={W,H,pad,iw,n,dates,idxs,series};   // 호버 툴팁용
+  return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">${g}${xl}${lines}</svg>`;
+}
+
+let CHART_META=null;
+function attachChartHover(){
+  const wrap=document.getElementById("bk-chart-wrap");
+  const svg=document.querySelector("#bk-chart svg");
+  const tip=document.getElementById("bk-tip"), guide=document.getElementById("bk-guide");
+  if(!svg || !CHART_META) return;
+  const M=CHART_META;
+  const Xpos=i=> M.n<=1 ? M.pad.l+M.iw/2 : M.pad.l+M.iw*i/(M.n-1);
+  function show(cx){
+    const rect=svg.getBoundingClientRect(); if(!rect.width) return;
+    const scale=rect.width/M.W;
+    const svgX=(cx-rect.left)/scale;
+    let pos=0,best=1e9;
+    for(let p=0;p<M.n;p++){ const dd=Math.abs(Xpos(p)-svgX); if(dd<best){best=dd;pos=p;} }
+    const px=Xpos(pos)*scale;
+    const day=M.dates[pos], oi=M.idxs[pos];
+    let rows="";
+    STORES.forEach(s=>{ const v=(M.series[s.key]||[])[oi];
+      if(v!=null) rows+=`<div class="tip-row"><i style="background:${HIST_COLORS[s.key]}"></i>${s.name} ${v}위</div>`; });
+    if(!rows) rows=`<div class="tip-row" style="color:#aaa">데이터 없음</div>`;
+    tip.innerHTML=`<div class="tip-date">${day.slice(5).replace("-","/")}</div>${rows}`;
+    guide.style.left=px+"px"; guide.style.height=rect.height+"px"; guide.style.display="block";
+    tip.style.display="block";
+    const ww=wrap.clientWidth, tw=tip.offsetWidth;
+    tip.style.left=Math.max(tw/2+2, Math.min(ww-tw/2-2, px))+"px";
+    tip.style.top="6px";
+  }
+  function hide(){ tip.style.display="none"; guide.style.display="none"; }
+  svg.addEventListener("mousemove", e=>show(e.clientX));
+  svg.addEventListener("mouseleave", hide);
+  svg.addEventListener("touchstart", e=>{ if(e.touches[0]) show(e.touches[0].clientX); }, {passive:true});
+  svg.addEventListener("touchmove",  e=>{ if(e.touches[0]) show(e.touches[0].clientX); }, {passive:true});
+}
+
+/* ----- 엑셀 내려받기 (현재 분야, 3사 나란히) ----- */
+function moveText(m){
+  if(!m) return "";
+  if(m.type==="new") return "NEW";
+  if(m.type==="same") return "–";
+  return (m.type==="up"?"▲":"▼") + Math.abs(m.diff);
+}
+
+function exportExcel(){
+  if(typeof XLSX==="undefined"){ alert("엑셀 모듈을 불러오는 중입니다. 잠시 후 다시 시도해 주세요."); return; }
+  const cat = CATEGORIES.find(c=>c.id===currentCat);
+  const catLabel = cat ? cat.label : String(currentCat);
+  const lim = viewLimit();
+  const cur = (DATASET[currentCat] && DATASET[currentCat].books) ? DATASET[currentCat].books : [];
+  if(!cur.length){ alert("이 분야는 내려받을 데이터가 없습니다."); return; }
+  // 서점별 정렬 목록 (화면과 동일)
+  const per = STORES.map(s => cur.filter(b=>b[s.key]).sort((a,b)=>a[s.key].t-b[s.key].t).slice(0,lim));
+  const maxLen = Math.max(0, ...per.map(a=>a.length));
+  const SUB = ["순위","도서명","저자","출판사","비고","전일대비"];
+  const BLK = 6, GAP = 1;
+  const aoa = [];
+  // 0행: 서점명 (병합), 1행: 소제목
+  const r0=[], r1=[];
+  STORES.forEach((s,i)=>{
+    r0.push(s.name,"","","","","");
+    SUB.forEach(h=>r1.push(h));
+    if(i<STORES.length-1){ r0.push(""); r1.push(""); }
+  });
+  aoa.push(r0, r1);
+  // 데이터: 행 = 순위 위치 (서점마다 다른 책)
+  for(let r=0;r<maxLen;r++){
+    const row=[];
+    per.forEach((list,i)=>{
+      const b=list[r];
+      if(b){ const rk=b[STORES[i].key];
+        row.push(rk.t, b.title||"", b.author||"", b.pub||"", rk.ship||"", moveText(movement(rk)));
+      } else row.push("","","","","","");
+      if(i<STORES.length-1) row.push("");
+    });
+    aoa.push(row);
+  }
+  const ws = XLSX.utils.aoa_to_sheet(aoa);
+  // 서점명 셀 병합
+  ws["!merges"]=[]; let c=0;
+  STORES.forEach(()=>{ ws["!merges"].push({s:{r:0,c},e:{r:0,c:c+BLK-1}}); c+=BLK+GAP; });
+  // 열 너비
+  const cols=[]; STORES.forEach((s,i)=>{
+    cols.push({wch:5},{wch:34},{wch:15},{wch:15},{wch:16},{wch:9});
+    if(i<STORES.length-1) cols.push({wch:2});
+  });
+  ws["!cols"]=cols;
+  const wb = XLSX.utils.book_new();
+  const sheetName = catLabel.replace(/[\\\/\?\*\[\]:]/g,"").slice(0,31) || "베스트셀러";
+  XLSX.utils.book_append_sheet(wb, ws, sheetName);
+  const dstr = (DATA_TODAY||"").replaceAll("-","");
+  XLSX.writeFile(wb, `전자책베스트셀러_${catLabel}_${dstr||"export"}.xlsx`);
+}
+
+function setView(v){
+  if(v==="merged" && isPast()){ VIEW_DATE = DATA_TODAY; refreshDateUI(); }  // 도서별 비교는 오늘 기준
+  currentView = v;
+  document.getElementById("btn-store").classList.toggle("active", v==="store");
+  document.getElementById("btn-merged").classList.toggle("active", v==="merged");
+  render();
+}
+
+let currentView = "store";
+let DATA_TODAY = "";
+let VIEW_DATE = "";                 // 지금 보고 있는 날짜 ("" 또는 오늘=라이브)
+let LIVE_VS = "전날 대비 순위 변동";  // 오늘 화면 부제(과거→오늘 복귀용)
+
+/* ===== 과거 날짜 보기 (가벼운 버전) ===== */
+function availableDates(){
+  let ds = (HISTORY && HISTORY.dates && HISTORY.dates.length) ? HISTORY.dates.slice() : [];
+  if(DATA_TODAY && !ds.includes(DATA_TODAY)){       // 오늘이 history에 아직 없으면 마지막에 추가
+    if(ds.length && DATA_TODAY > ds[ds.length-1]) ds.push(DATA_TODAY);
+    else if(!ds.length) ds = [DATA_TODAY];
+  }
+  return ds;
+}
+function isPast(){ return !!(VIEW_DATE && DATA_TODAY && VIEW_DATE !== DATA_TODAY); }
+
+async function ensureHistory(){
+  if(HISTORY === null) await loadHistory();
+  setupDateNav();
+}
+function setupDateNav(){
+  if(!VIEW_DATE) VIEW_DATE = DATA_TODAY;
+  const inp = document.getElementById("date-input");
+  const ds = availableDates();
+  if(inp && ds.length){ inp.min = ds[0]; inp.max = ds[ds.length-1]; }
+  refreshDateUI();
+}
+function refreshDateUI(){
+  const ds = availableDates();
+  const cur=document.getElementById("date-cur"), prev=document.getElementById("date-prev"),
+        next=document.getElementById("date-next"), back=document.getElementById("back-today"),
+        vs=document.getElementById("vs-el");
+  const navOn = !!(HISTORY && ds.length>1);
+  const i = ds.indexOf(VIEW_DATE);
+  if(cur){ cur.innerHTML = fmtDate(VIEW_DATE||DATA_TODAY) + (isPast()?'<span class="past-badge">과거</span>':''); cur.style.cursor = navOn?"pointer":"default"; }
+  if(prev) prev.disabled = !navOn || i<=0;
+  if(next) next.disabled = !navOn || i<0 || i>=ds.length-1;
+  if(back) back.style.display = isPast()?"inline-block":"none";
+  const lg=document.querySelector(".legend"); if(lg) lg.style.display = isPast()?"none":"";
+  if(vs)   vs.textContent = isPast() ? "과거 순위 보기 · 전일 대비 변동은 표시되지 않음" : LIVE_VS;
+}
+function applyDate(date){ VIEW_DATE = date || DATA_TODAY; refreshDateUI(); render(); }
+function goToday(){ applyDate(DATA_TODAY); }
+async function stepDate(dir){
+  await ensureHistory();
+  const ds = availableDates(); let i = ds.indexOf(VIEW_DATE);
+  if(i<0) i = ds.length-1;
+  const ni = i + dir;
+  if(ni<0 || ni>=ds.length) return;
+  applyDate(ds[ni]);
+}
+async function openDatePicker(){
+  await ensureHistory();
+  const ds = availableDates();
+  if(!HISTORY || ds.length<2) return;     // 과거 데이터 없으면 달력 비활성
+  const inp = document.getElementById("date-input");
+  inp.value = VIEW_DATE || DATA_TODAY;
+  if(inp.showPicker){ try{ inp.showPicker(); return; }catch(e){} }
+  inp.focus(); inp.click();
+}
+function onDatePick(val){ if(val) applyDate(nearestAvailable(val)); }
+function nearestAvailable(val){
+  const ds = availableDates();
+  if(ds.includes(val)) return val;
+  let best=null; for(const d of ds){ if(d<=val) best=d; }   // 빈 날짜는 그 이하 가장 가까운 날로
+  return best || ds[0] || DATA_TODAY;
+}
+
+function renderPast(){
+  const storeEl=document.getElementById("store"), mergedEl=document.getElementById("merged");
+  const xbtn=document.getElementById("excel-btn"); if(xbtn) xbtn.style.display="none";  // 과거는 엑셀 비표시
+  if(mergedEl) mergedEl.style.display="none";
+  storeEl.style.display="";
+  renderStoresForDate(VIEW_DATE);
+}
+function renderStoresForDate(date){
+  const grid=document.getElementById("store"); grid.innerHTML="";
+  const H=HISTORY, di=(H&&H.dates)?H.dates.indexOf(date):-1;
+  STORES.forEach(s=>{
+    let items=[];
+    if(di>=0){
+      for(const gk in H.books){
+        const bk=H.books[gk], ser=bk.series && bk.series[currentCat];
+        if(!ser || !ser[s.key]) continue;
+        const r=ser[s.key][di];
+        if(typeof r==="number") items.push({rank:r, title:bk.title, author:bk.author, pub:bk.pub});
+      }
+      items.sort((a,b)=>a.rank-b.rank);
+      items=items.slice(0, viewLimit());
+    }
+    let inner, cnt;
+    if(!items.length){ cnt="–"; inner=`<div class="col-msg">이 날짜·분야는 ${s.name} 데이터가 없습니다</div>`; }
+    else{
+      let rows="";
+      items.forEach(b=>{
+        rows+=`<li class="row">
+          <div class="rank num">${b.rank}</div>
+          <div class="info">
+            <div class="bk-title">${b.title||""}</div>
+            <div class="bk-meta">${b.author||""}${b.pub?(" · "+b.pub):""}</div>
+          </div></li>`;
+      });
+      inner=`<ul>${rows}</ul>`; cnt=`TOP ${items.length}`;
+    }
+    grid.insertAdjacentHTML("beforeend",
+      `<div class="col"><div class="col-head"><span class="name">${s.name}</span><span class="cnt num">${cnt}</span></div>${inner}</div>`);
+  });
+}
+
+function renderCategoryBar(){
+  const bar = document.getElementById("cat-bar");
+  bar.innerHTML = "";
+  CATEGORIES.forEach(c=>{
+    const has = DATASET[c.id] && DATASET[c.id].books && DATASET[c.id].books.length;
+    const b = document.createElement("button");
+    b.textContent = c.label;
+    b.className = (c.id===currentCat ? "active" : "");
+    if(!has && c.id!=="all"){ b.style.opacity=".4"; }   // 데이터 없는 카테고리는 흐리게
+    b.onclick = ()=>{ currentCat = c.id; renderCategoryBar(); render(); };
+    bar.appendChild(b);
+  });
+}
+
+function render(){
+  if(isPast()){ renderPast(); return; }
+  books = (DATASET[currentCat] && DATASET[currentCat].books) ? DATASET[currentCat].books : [];
+  const xbtn = document.getElementById("excel-btn");
+  if(xbtn) xbtn.style.display = (currentView==="store" && books.length) ? "inline-flex" : "none";
+  const storeEl = document.getElementById("store");
+  const mergedEl = document.getElementById("merged");
+
+  if(!books.length){
+    const msg = `<div class="cat-empty">이 카테고리의 데이터가 아직 없습니다.</div>`;
+    storeEl.style.display = currentView==="store" ? "" : "none";
+    mergedEl.style.display = currentView==="merged" ? "block" : "none";
+    storeEl.innerHTML = currentView==="store" ? msg : "";
+    if(currentView==="merged") mergedEl.querySelector("tbody").innerHTML =
+      `<tr><td colspan="6" style="padding:40px;text-align:center;color:var(--ink-3)">이 카테고리의 데이터가 아직 없습니다.</td></tr>`;
+    return;
+  }
+  storeEl.style.display  = currentView==="store"  ? "" : "none";
+  mergedEl.style.display = currentView==="merged" ? "block" : "none";
+  renderStores();
+  renderMerged();
+}
+
+function fmtDate(d){ return d ? d.replaceAll("-", ".") : ""; }
+
+async function init(){
+  try{
+    const res = await fetch("./data.json?v="+Date.now(), {cache:"no-store"});
+    if(res.ok){
+      const data = await res.json();
+      if(data.data && data.categories){
+        DATASET = data.data;
+        CATEGORIES = data.categories;
+        currentCat = CATEGORIES[0] ? CATEGORIES[0].id : "all";
+        if(typeof data.surge_gap === "number") SURGE_GAP = data.surge_gap;
+        document.getElementById("date-cur").textContent = fmtDate(data.today);
+        DATA_TODAY = data.today || "";
+        VIEW_DATE = DATA_TODAY;
+        LIVE_VS = data.prev ? `전날(${fmtDate(data.prev)}) 대비 순위 변동` : "전날 데이터 없음 (첫 수집일)";
+        document.getElementById("vs-el").textContent = LIVE_VS;
+        const tag = document.getElementById("sample-tag"); if(tag) tag.remove();
+      }
+    }
+  }catch(e){ /* data.json 없음(미리보기) → 샘플 표시 */ }
+  renderCategoryBar();
+  render();
+  // 과거 날짜 보기용 history 백그라운드 로딩 → 날짜 내비 준비
+  loadHistory().then(()=>{ setupDateNav(); });
+}
+
+init();
+</script>
+</body>
+</html>
