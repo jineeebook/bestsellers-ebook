@@ -1,0 +1,38 @@
+name: Daily Bestseller Crawl
+
+on:
+  schedule:
+    # UTC 22:00 = 한국시간(KST) 오전 7:00
+    - cron: '0 22 * * *'
+  workflow_dispatch: {}   # 저장소 Actions 탭에서 수동 실행도 가능
+
+permissions:
+  contents: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 코드 가져오기
+        uses: actions/checkout@v4
+
+      - name: 파이썬 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 필요한 패키지 설치
+        run: |
+          pip install -r crawler/requirements.txt
+          playwright install --with-deps chromium
+
+      - name: 크롤러 실행 (data.json / history.json 생성)
+        run: python crawler/crawl.py
+
+      - name: 결과 커밋 및 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json history.json
+          git diff --cached --quiet || git commit -m "chore: 베스트셀러 데이터 갱신 ($(date +'%Y-%m-%d'))"
+          git push
