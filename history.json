@@ -1,7 +1,8 @@
 {
   "dates": [
     "2026-08-14",
-    "2026-08-15"
+    "2026-08-15",
+    "2026-08-16"
   ],
   "books": {
     "세네카오늘을빼앗기고있는당신에게": {
@@ -12,13 +13,16 @@
         "all": {
           "kyobo_paper": [
             1,
-            4
+            4,
+            1
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -33,15 +37,18 @@
         "all": {
           "kyobo_paper": [
             2,
-            5
+            5,
+            2
           ],
           "kyobo_ebook": [
+            2,
             2,
             2
           ],
           "yes24_ebook": [
             3,
-            1
+            1,
+            null
           ]
         }
       }
@@ -54,15 +61,18 @@
         "all": {
           "kyobo_paper": [
             3,
-            6
+            6,
+            9
           ],
           "kyobo_ebook": [
             14,
-            11
+            11,
+            17
           ],
           "yes24_ebook": [
             17,
-            5
+            5,
+            null
           ]
         }
       }
@@ -75,13 +85,16 @@
         "all": {
           "kyobo_paper": [
             4,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -96,13 +109,16 @@
         "all": {
           "kyobo_paper": [
             5,
-            20
+            20,
+            null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -117,13 +133,16 @@
         "all": {
           "kyobo_paper": [
             6,
-            8
+            8,
+            10
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -138,13 +157,16 @@
         "all": {
           "kyobo_paper": [
             7,
-            17
-          ],
-          "kyobo_ebook": [
             17,
             7
           ],
+          "kyobo_ebook": [
+            17,
+            7,
+            12
+          ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -159,13 +181,16 @@
         "all": {
           "kyobo_paper": [
             8,
-            13
+            13,
+            14
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -180,13 +205,16 @@
         "all": {
           "kyobo_paper": [
             9,
-            12
+            12,
+            5
           ],
           "kyobo_ebook": [
             3,
-            3
+            3,
+            7
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -201,13 +229,16 @@
         "all": {
           "kyobo_paper": [
             10,
-            11
+            11,
+            13
           ],
           "kyobo_ebook": [
             null,
-            12
+            12,
+            null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -222,14 +253,17 @@
         "all": {
           "kyobo_paper": [
             11,
-            14
+            14,
+            12
           ],
           "kyobo_ebook": [
             null,
-            13
+            13,
+            null
           ],
           "yes24_ebook": [
             9,
+            null,
             null
           ]
         }
@@ -243,13 +277,16 @@
         "all": {
           "kyobo_paper": [
             12,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -264,15 +301,18 @@
         "all": {
           "kyobo_paper": [
             13,
-            10
+            10,
+            6
           ],
           "kyobo_ebook": [
             8,
-            null
+            null,
+            4
           ],
           "yes24_ebook": [
             4,
-            6
+            6,
+            null
           ]
         }
       }
@@ -285,13 +325,16 @@
         "all": {
           "kyobo_paper": [
             14,
-            16
+            16,
+            17
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -306,13 +349,16 @@
         "all": {
           "kyobo_paper": [
             15,
-            18
+            18,
+            null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -327,15 +373,18 @@
         "all": {
           "kyobo_paper": [
             16,
+            null,
             null
           ],
           "kyobo_ebook": [
             4,
-            9
+            9,
+            16
           ],
           "yes24_ebook": [
             5,
-            23
+            23,
+            null
           ]
         }
       }
@@ -348,13 +397,16 @@
         "all": {
           "kyobo_paper": [
             17,
-            19
+            19,
+            20
           ],
           "kyobo_ebook": [
             null,
-            16
+            16,
+            null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -369,13 +421,16 @@
         "all": {
           "kyobo_paper": [
             18,
-            null
+            null,
+            8
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -390,13 +445,16 @@
         "all": {
           "kyobo_paper": [
             19,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -411,13 +469,16 @@
         "all": {
           "kyobo_paper": [
             20,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -432,13 +493,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             1,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -453,13 +517,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             5,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -474,13 +541,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             6,
-            1
+            1,
+            3
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -495,15 +565,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             7,
-            5
+            5,
+            6
           ],
           "yes24_ebook": [
             10,
-            21
+            21,
+            null
           ]
         }
       }
@@ -516,14 +589,17 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             9,
+            null,
             null
           ],
           "yes24_ebook": [
             12,
+            null,
             null
           ]
         }
@@ -537,13 +613,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             10,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -558,13 +637,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             11,
-            6
+            6,
+            null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -579,13 +661,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             12,
-            4
+            4,
+            5
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -600,13 +685,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             13,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -621,13 +709,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             15,
-            null
+            null,
+            19
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -642,13 +733,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             16,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -663,14 +757,17 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             18,
-            null
+            null,
+            13
           ],
           "yes24_ebook": [
             15,
+            null,
             null
           ]
         }
@@ -684,14 +781,17 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             19,
+            null,
             null
           ],
           "yes24_ebook": [
             20,
+            null,
             null
           ]
         }
@@ -705,15 +805,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             20,
+            null,
             null
           ],
           "yes24_ebook": [
             null,
-            9
+            9,
+            null
           ]
         }
       }
@@ -726,15 +829,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             1,
-            2
+            2,
+            null
           ]
         }
       }
@@ -747,14 +853,17 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             2,
+            null,
             null
           ]
         }
@@ -768,14 +877,17 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             6,
+            null,
             null
           ]
         }
@@ -789,15 +901,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             7,
-            18
+            18,
+            null
           ]
         }
       }
@@ -810,15 +925,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             8,
-            8
+            8,
+            null
           ]
         }
       }
@@ -831,14 +949,17 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             11,
+            null,
             null
           ]
         }
@@ -852,15 +973,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             13,
-            15
+            15,
+            null
           ]
         }
       }
@@ -873,15 +997,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             14,
-            10
+            10,
+            null
           ]
         }
       }
@@ -894,15 +1021,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             16,
-            17
+            17,
+            null
           ]
         }
       }
@@ -915,15 +1045,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             18,
-            11
+            11,
+            null
           ]
         }
       }
@@ -936,14 +1069,17 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             19,
+            null,
             null
           ]
         }
@@ -957,14 +1093,17 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             21,
+            null,
             null
           ]
         }
@@ -978,14 +1117,17 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             22,
+            null,
             null
           ]
         }
@@ -999,14 +1141,17 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             23,
+            null,
             null
           ]
         }
@@ -1020,14 +1165,17 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             24,
+            null,
             null
           ]
         }
@@ -1041,13 +1189,16 @@
         "all": {
           "kyobo_paper": [
             null,
-            1
+            1,
+            16
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -1062,13 +1213,16 @@
         "all": {
           "kyobo_paper": [
             null,
-            2
+            2,
+            null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -1083,13 +1237,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            3,
             3
           ],
           "kyobo_ebook": [
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -1104,13 +1261,16 @@
         "all": {
           "kyobo_paper": [
             null,
-            7
+            7,
+            null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -1125,13 +1285,16 @@
         "all": {
           "kyobo_paper": [
             null,
-            9
+            9,
+            null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -1146,13 +1309,16 @@
         "all": {
           "kyobo_paper": [
             null,
-            15
+            15,
+            18
           ],
           "kyobo_ebook": [
             null,
-            8
+            8,
+            9
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -1167,15 +1333,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
-            10
+            10,
+            11
           ],
           "yes24_ebook": [
             null,
-            13
+            13,
+            null
           ]
         }
       }
@@ -1188,13 +1357,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
-            14
+            14,
+            null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -1209,15 +1381,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
-            15
+            15,
+            null
           ],
           "yes24_ebook": [
             null,
-            3
+            3,
+            null
           ]
         }
       }
@@ -1230,13 +1405,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
-            17
+            17,
+            null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -1251,13 +1429,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
-            18
+            18,
+            null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -1272,13 +1453,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
-            19
+            19,
+            null
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -1293,13 +1477,16 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
-            20
+            20,
+            15
           ],
           "yes24_ebook": [
+            null,
             null,
             null
           ]
@@ -1314,15 +1501,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             null,
-            4
+            4,
+            null
           ]
         }
       }
@@ -1335,36 +1525,42 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             null,
-            7
+            7,
+            null
           ]
         }
       }
     },
     "문해내공": {
       "title": "문해내공",
-      "author": "신종호, 김윤정 저",
+      "author": "신종호 외",
       "pub": "상상스퀘어",
       "series": {
         "all": {
           "kyobo_paper": [
             null,
-            null
+            null,
+            19
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             null,
-            12
+            12,
+            null
           ]
         }
       }
@@ -1377,15 +1573,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             null,
-            14
+            14,
+            null
           ]
         }
       }
@@ -1398,15 +1597,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             null,
-            16
+            16,
+            null
           ]
         }
       }
@@ -1419,15 +1621,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             null,
-            19
+            19,
+            null
           ]
         }
       }
@@ -1440,15 +1645,18 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             null,
-            20
+            20,
+            null
           ]
         }
       }
@@ -1461,36 +1669,210 @@
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             null,
-            22
+            22,
+            null
           ]
         }
       }
     },
     "사랑의기술": {
       "title": "사랑의 기술",
-      "author": "에리히 프롬 저/강주헌 역",
+      "author": "에리히 프롬 지음",
       "pub": "문예출판사",
       "series": {
         "all": {
           "kyobo_paper": [
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
+            null,
+            18
+          ],
+          "yes24_ebook": [
+            null,
+            24,
+            null
+          ]
+        }
+      }
+    },
+    "큰뜻을품은자여왜그자리에머물러있는가": {
+      "title": "큰 뜻을 품은 자여, 왜 그 자리에 머물러 있는가",
+      "author": "정약용",
+      "pub": "모티브",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            4
+          ],
+          "kyobo_ebook": [
+            null,
             null,
             null
           ],
           "yes24_ebook": [
             null,
-            24
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "공시6년실패중소기업김대리는어떻게6년만에22억을벌었나": {
+      "title": "공시 6년 실패, 중소기업 김 대리는 어떻게 6년 만에 22억을 벌었나",
+      "author": "김동면",
+      "pub": "모티브",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            11
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            null
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "김경일의지혜로운인간생활": {
+      "title": "김경일의 지혜로운 인간생활",
+      "author": "김경일",
+      "pub": "저녁달",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            null
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            1
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "피로사회": {
+      "title": "피로사회",
+      "author": "한병철 지음",
+      "pub": "문학과지성사",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            null
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            8
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "삶은그대에게잘해줄의무가없다": {
+      "title": "삶은 그대에게 잘해줄 의무가 없다",
+      "author": "페마 쵸드론 지음",
+      "pub": "윌마",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            null
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            10
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "크툴루의부름수호자룰북": {
+      "title": "크툴루의 부름: 수호자 룰북",
+      "author": "샌디 피터슨",
+      "pub": "초여명",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            null
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            14
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "단한번의삶": {
+      "title": "단 한 번의 삶",
+      "author": "김영하",
+      "pub": "복복서가",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            null
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            20
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null
           ]
         }
       }
