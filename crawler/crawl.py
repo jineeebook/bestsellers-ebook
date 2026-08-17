@@ -25,7 +25,7 @@ from playwright.sync_api import sync_playwright
 
 # ---------- 기본 설정 ----------
 KST = timezone(timedelta(hours=9))
-TODAY = (datetime.now(KST) - timedelta(days=1)).strftime("%Y-%m-%d")
+TODAY = datetime.now(KST).strftime("%Y-%m-%d")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root
 DATA_JSON = os.path.join(BASE_DIR, "data.json")
