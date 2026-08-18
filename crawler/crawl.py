@@ -19,16 +19,13 @@ import json
 import os
 import re
 import sys
-import time
 from datetime import datetime, timedelta, timezone
 
 from playwright.sync_api import sync_playwright
 
 # ---------- 기본 설정 ----------
 KST = timezone(timedelta(hours=9))
-# 3개 사이트 모두 "일간 베스트"라고 표시하지만 실제로는 전날 판매량 기준이라서,
-# 크롤링 실행일(오늘)에서 하루를 뺀 날짜를 "데이터가 실제로 반영하는 날짜"로 기록한다.
-TODAY = (datetime.now(KST) - timedelta(days=1)).strftime("%Y-%m-%d")
+TODAY = datetime.now(KST).strftime("%Y-%m-%d")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root
 DATA_JSON = os.path.join(BASE_DIR, "data.json")
@@ -52,8 +49,8 @@ def norm_title(title: str) -> str:
 # ---------- 사이트별 크롤링 함수 ----------
 def scrape_kyobo_paper(page):
     """교보문고 종이책 온라인 일간 베스트"""
-    page.goto(STORE_URLS["kyobo_paper"], wait_until="networkidle", timeout=90000)
-    page.wait_for_selector("a.prod_link.line-clamp-2", timeout=40000)
+    page.goto(STORE_URLS["kyobo_paper"], wait_until="networkidle", timeout=60000)
+    page.wait_for_selector("a.prod_link.line-clamp-2", timeout=20000)
     items = page.query_selector_all("ol.grid > li")
     results = []
     for idx, li in enumerate(items, start=1):
@@ -90,27 +87,23 @@ def scrape_kyobo_paper(page):
 
 def scrape_kyobo_ebook(page):
     """교보문고 eBook 일간 베스트"""
-    page.goto(STORE_URLS["kyobo_ebook"], wait_until="networkidle", timeout=90000)
-    page.wait_for_selector("div#prdList div.prodDt", timeout=40000)
+    page.goto(STORE_URLS["kyobo_ebook"], wait_until="networkidle", timeout=60000)
+    page.wait_for_selector("div#prdList div.prodDt", timeout=20000)
     items = page.query_selector_all("div#prdList > div.prodDt")
     results = []
-    for idx, li in enumerate(items, start=1):
+    for li in items:
+        rank_el = li.query_selector("em.rank")
+        if not rank_el:
+            continue
+        try:
+            rank = int(rank_el.inner_text().strip())
+        except ValueError:
+            continue
+
         title_el = li.query_selector("h3 a")
-        if not title_el:
-            continue
-        title = title_el.inner_text().strip()
-        if not title:
-            continue
+        title = title_el.inner_text().strip() if title_el else ""
         href = title_el.get_attribute("href") if title_el else ""
         pid = href.rstrip("/").split("/")[-1] if href else ""
-
-        rank_el = li.query_selector("em.rank")
-        rank = idx
-        if rank_el:
-            try:
-                rank = int(rank_el.inner_text().strip())
-            except ValueError:
-                rank = idx
 
         info_spans = li.query_selector_all("p.prodDt_info > span")
         texts = [s.inner_text().strip() for s in info_spans]
@@ -125,27 +118,21 @@ def scrape_kyobo_ebook(page):
 
 def scrape_yes24_ebook(page):
     """예스24 전자책(eBook) 일간 베스트"""
-    page.goto(STORE_URLS["yes24_ebook"], wait_until="networkidle", timeout=90000)
-    page.wait_for_selector("ul#yesBestList li", timeout=40000)
+    page.goto(STORE_URLS["yes24_ebook"], wait_until="networkidle", timeout=60000)
+    page.wait_for_selector("ul#yesBestList li", timeout=20000)
     items = page.query_selector_all("ul#yesBestList > li")
     results = []
-    for idx, li in enumerate(items, start=1):
-        title_el = li.query_selector("a.gd_name")
-        if not title_el:
-            continue  # 진짜 도서 항목이 아닌 경우(광고 등)만 건너뜀
-        title = title_el.inner_text().strip()
-        if not title:
+    for li in items:
+        rank_el = li.query_selector("em.ico.rank")
+        if not rank_el:
+            continue
+        try:
+            rank = int(rank_el.inner_text().strip())
+        except ValueError:
             continue
 
-        # 순위 숫자를 못 읽어도 항목을 버리지 않고, 목록 순서를 순위로 대신 사용
-        rank_el = li.query_selector("em.ico.rank")
-        rank = idx
-        if rank_el:
-            try:
-                rank = int(rank_el.inner_text().strip())
-            except ValueError:
-                rank = idx
-
+        title_el = li.query_selector("a.gd_name")
+        title = title_el.inner_text().strip() if title_el else ""
         pid = li.get_attribute("data-goods-no") or ""
 
         author_el = li.query_selector("span.info_auth")
@@ -164,20 +151,6 @@ SCRAPERS = {
     "kyobo_ebook": scrape_kyobo_ebook,
     "yes24_ebook": scrape_yes24_ebook,
 }
-
-RETRY_COUNT = 2  # 사이트 응답이 느려서 실패하면 이만큼 더 시도
-
-
-def scrape_with_retry(store, page):
-    last_err = None
-    for attempt in range(1, RETRY_COUNT + 1):
-        try:
-            return SCRAPERS[store](page)
-        except Exception as e:
-            last_err = e
-            print(f"[RETRY {attempt}/{RETRY_COUNT}] {store}: {e}", file=sys.stderr)
-            time.sleep(3)
-    raise last_err
 
 
 # ---------- 병합 / 전일 대비 계산 ----------
@@ -287,19 +260,11 @@ def main():
     errors = {}
     with sync_playwright() as p:
         browser = p.chromium.launch()
-        context = browser.new_context(
-            locale="ko-KR",
-            user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-            ),
-        )
-        page = context.new_page()
-        page.set_default_timeout(90000)
-        page.set_default_navigation_timeout(90000)
+        page = browser.new_page(locale="ko-KR")
+        page.set_default_timeout(60000)
         for store in STORES:
             try:
-                scraped[store] = scrape_with_retry(store, page)
+                scraped[store] = SCRAPERS[store](page)
                 print(f"[OK] {store}: {len(scraped[store])}건 수집")
             except Exception as e:
                 scraped[store] = []
