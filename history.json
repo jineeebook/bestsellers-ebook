@@ -16,7 +16,8 @@
     "2026-08-28",
     "2026-08-29",
     "2026-08-30",
-    "2026-08-31"
+    "2026-08-31",
+    "2026-09-01"
   ],
   "books": {
     "세네카오늘을빼앗기고있는당신에게": {
@@ -42,6 +43,7 @@
             1,
             2,
             3,
+            1,
             1
           ],
           "kyobo_ebook": [
@@ -61,9 +63,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -108,7 +112,8 @@
             6,
             5,
             6,
-            5
+            5,
+            10
           ],
           "kyobo_ebook": [
             2,
@@ -126,6 +131,7 @@
             14,
             6,
             19,
+            null,
             null,
             null
           ],
@@ -146,7 +152,8 @@
             3,
             10,
             null,
-            16
+            16,
+            null
           ]
         }
       }
@@ -163,6 +170,7 @@
             9,
             4,
             4,
+            null,
             null,
             null,
             null,
@@ -193,6 +201,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -202,6 +211,7 @@
             null,
             null,
             8,
+            null,
             null,
             null,
             null,
@@ -240,6 +250,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -259,9 +270,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -306,6 +319,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -325,9 +339,11 @@
             null,
             11,
             17,
-            12
+            12,
+            19
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -372,9 +388,11 @@
             8,
             8,
             14,
-            16
+            16,
+            8
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -394,6 +412,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -438,7 +457,8 @@
             11,
             12,
             11,
-            11
+            11,
+            null
           ],
           "kyobo_ebook": [
             17,
@@ -457,9 +477,11 @@
             null,
             null,
             15,
-            15
+            15,
+            null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -504,6 +526,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -523,9 +546,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -570,7 +595,8 @@
             7,
             7,
             10,
-            10
+            10,
+            4
           ],
           "kyobo_ebook": [
             3,
@@ -589,9 +615,11 @@
             14,
             5,
             10,
+            17,
             17
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -636,7 +664,8 @@
             16,
             11,
             19,
-            null
+            null,
+            16
           ],
           "kyobo_ebook": [
             null,
@@ -655,6 +684,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -663,6 +693,7 @@
             null,
             19,
             19,
+            null,
             null,
             null,
             null,
@@ -702,7 +733,8 @@
             14,
             13,
             16,
-            14
+            14,
+            19
           ],
           "kyobo_ebook": [
             null,
@@ -713,6 +745,7 @@
             19,
             null,
             20,
+            null,
             null,
             null,
             null,
@@ -740,7 +773,8 @@
             14,
             20,
             11,
-            null
+            null,
+            13
           ]
         }
       }
@@ -753,6 +787,7 @@
         "all": {
           "kyobo_paper": [
             12,
+            null,
             null,
             null,
             null,
@@ -787,9 +822,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -834,6 +871,7 @@
             19,
             17,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -849,6 +887,7 @@
             18,
             null,
             20,
+            null,
             null,
             null,
             null,
@@ -869,6 +908,7 @@
             4,
             null,
             23,
+            null,
             null,
             null,
             null,
@@ -900,6 +940,7 @@
             null,
             14,
             null,
+            15,
             15
           ],
           "kyobo_ebook": [
@@ -919,9 +960,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -966,6 +1009,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -985,9 +1029,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -1032,6 +1078,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -1051,11 +1098,13 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
             5,
             23,
+            null,
             null,
             null,
             null,
@@ -1098,6 +1147,7 @@
             4,
             4,
             4,
+            3,
             3
           ],
           "kyobo_ebook": [
@@ -1117,7 +1167,8 @@
             19,
             3,
             13,
-            9
+            9,
+            14
           ],
           "yes24_ebook": [
             null,
@@ -1136,7 +1187,8 @@
             1,
             2,
             5,
-            null
+            null,
+            12
           ]
         }
       }
@@ -1164,9 +1216,11 @@
             null,
             null,
             20,
-            20
+            20,
+            null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -1186,6 +1240,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -1230,6 +1285,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -1248,6 +1304,7 @@
             null,
             null,
             15,
+            null,
             null,
             null
           ],
@@ -1268,6 +1325,7 @@
             9,
             16,
             17,
+            null,
             null
           ]
         }
@@ -1296,9 +1354,11 @@
             null,
             null,
             null,
-            null
+            null,
+            13
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -1318,6 +1378,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -1362,6 +1423,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -1381,9 +1443,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -1428,6 +1492,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -1447,9 +1512,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -1494,6 +1561,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -1513,9 +1581,11 @@
             12,
             null,
             3,
-            7
+            7,
+            null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -1560,6 +1630,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -1574,6 +1645,7 @@
             null,
             8,
             20,
+            null,
             null,
             null,
             null,
@@ -1598,6 +1670,7 @@
             null,
             24,
             9,
+            null,
             null
           ]
         }
@@ -1626,6 +1699,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -1645,10 +1719,12 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
             12,
+            null,
             null,
             null,
             null,
@@ -1692,6 +1768,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -1711,9 +1788,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -1758,6 +1837,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -1776,6 +1856,7 @@
             null,
             null,
             20,
+            null,
             null,
             null
           ],
@@ -1796,7 +1877,8 @@
             null,
             null,
             19,
-            21
+            21,
+            null
           ]
         }
       }
@@ -1824,6 +1906,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -1843,7 +1926,8 @@
             9,
             14,
             18,
-            13
+            13,
+            16
           ],
           "yes24_ebook": [
             null,
@@ -1862,7 +1946,8 @@
             23,
             8,
             15,
-            5
+            5,
+            11
           ]
         }
       }
@@ -1874,6 +1959,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -1909,9 +1995,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -1956,6 +2044,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -1968,6 +2057,7 @@
             13,
             null,
             19,
+            null,
             null,
             null,
             null,
@@ -1994,6 +2084,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -2006,6 +2097,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -2041,9 +2133,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -2088,6 +2182,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -2102,6 +2197,7 @@
             null,
             13,
             17,
+            null,
             null,
             null,
             null,
@@ -2126,6 +2222,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -2138,6 +2235,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -2173,7 +2271,8 @@
             3,
             1,
             8,
-            5
+            5,
+            7
           ],
           "yes24_ebook": [
             20,
@@ -2192,7 +2291,8 @@
             4,
             19,
             8,
-            8
+            8,
+            6
           ]
         }
       }
@@ -2204,6 +2304,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -2239,7 +2340,8 @@
             null,
             null,
             7,
-            14
+            14,
+            null
           ],
           "yes24_ebook": [
             null,
@@ -2258,6 +2360,7 @@
             null,
             21,
             18,
+            null,
             null
           ]
         }
@@ -2286,9 +2389,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -2324,6 +2429,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -2336,6 +2442,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -2371,10 +2478,12 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
             2,
+            null,
             null,
             null,
             null,
@@ -2418,9 +2527,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -2441,6 +2552,7 @@
           ],
           "yes24_ebook": [
             6,
+            null,
             null,
             null,
             null,
@@ -2484,9 +2596,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -2522,6 +2636,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -2550,9 +2665,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -2588,6 +2705,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -2616,9 +2734,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -2654,6 +2774,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -2666,6 +2787,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -2701,6 +2823,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -2710,6 +2833,7 @@
             23,
             null,
             12,
+            null,
             null,
             null,
             null,
@@ -2748,9 +2872,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -2786,7 +2912,8 @@
             10,
             13,
             6,
-            6
+            6,
+            8
           ]
         }
       }
@@ -2798,6 +2925,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -2833,6 +2961,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -2852,6 +2981,7 @@
             null,
             17,
             null,
+            null,
             null
           ]
         }
@@ -2864,6 +2994,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -2899,6 +3030,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -2907,6 +3039,7 @@
             null,
             11,
             11,
+            null,
             null,
             null,
             null,
@@ -2946,9 +3079,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -2984,6 +3119,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -2991,11 +3127,12 @@
     },
     "2026해커스gsat삼성직무적성검사통합기본서최신기출유형+실전모의고사수리/추리": {
       "title": "2026 해커스 GSAT 삼성직무적성검사 통합 기본서 최신기출유형+실전모의고사 (수리/추리)",
-      "author": "해커스 취업교육연구소",
+      "author": "해커스 GSAT 취업교육연구소 저",
       "pub": "해커스잡",
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -3031,6 +3168,7 @@
             18,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -3050,7 +3188,8 @@
             null,
             null,
             null,
-            null
+            null,
+            22
           ]
         }
       }
@@ -3062,6 +3201,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -3097,10 +3237,12 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
             22,
+            null,
             null,
             null,
             null,
@@ -3144,9 +3286,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -3172,6 +3316,7 @@
             null,
             null,
             15,
+            null,
             null,
             null,
             null,
@@ -3210,9 +3355,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -3233,6 +3380,7 @@
           ],
           "yes24_ebook": [
             24,
+            null,
             null,
             null,
             null,
@@ -3276,6 +3424,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -3295,9 +3444,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -3342,6 +3493,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -3361,9 +3513,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -3408,6 +3562,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -3427,9 +3582,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -3474,6 +3631,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -3493,9 +3651,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -3540,6 +3700,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -3559,9 +3720,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -3606,6 +3769,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -3625,9 +3789,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -3672,6 +3838,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -3691,11 +3858,13 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
             null,
             13,
+            null,
             null,
             null,
             null,
@@ -3738,6 +3907,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -3757,9 +3927,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -3804,6 +3976,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -3820,6 +3993,7 @@
             null,
             null,
             18,
+            null,
             null,
             null,
             null,
@@ -3842,7 +4016,8 @@
             null,
             null,
             null,
-            19
+            19,
+            null
           ]
         }
       }
@@ -3870,11 +4045,13 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
             17,
+            null,
             null,
             null,
             null,
@@ -3897,6 +4074,7 @@
             null,
             23,
             23,
+            null,
             null,
             null,
             null,
@@ -3936,6 +4114,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -3955,9 +4134,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -4002,11 +4183,13 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
             null,
             19,
+            null,
             null,
             null,
             null,
@@ -4031,6 +4214,7 @@
             null,
             10,
             12,
+            null,
             null,
             null,
             null,
@@ -4068,6 +4252,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -4087,9 +4272,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -4134,9 +4321,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -4164,6 +4353,7 @@
             7,
             null,
             24,
+            null,
             null,
             null,
             null,
@@ -4200,9 +4390,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -4238,6 +4430,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -4253,6 +4446,7 @@
             null,
             null,
             19,
+            null,
             null,
             null,
             null,
@@ -4285,6 +4479,7 @@
             null,
             13,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -4304,7 +4499,8 @@
             null,
             null,
             24,
-            15
+            15,
+            null
           ]
         }
       }
@@ -4332,9 +4528,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -4370,6 +4568,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -4382,6 +4581,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -4417,11 +4617,13 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
             null,
             16,
+            null,
             null,
             null,
             null,
@@ -4464,9 +4666,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -4488,6 +4692,7 @@
           "yes24_ebook": [
             null,
             19,
+            null,
             null,
             null,
             null,
@@ -4530,9 +4735,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -4563,6 +4770,7 @@
             null,
             null,
             20,
+            null,
             null,
             null,
             null,
@@ -4596,9 +4804,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -4620,6 +4830,7 @@
           "yes24_ebook": [
             null,
             22,
+            null,
             null,
             null,
             null,
@@ -4662,6 +4873,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -4681,11 +4893,13 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
             null,
             24,
+            null,
             null,
             null,
             null,
@@ -4728,6 +4942,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -4747,9 +4962,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -4794,6 +5011,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -4813,9 +5031,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -4860,6 +5080,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -4879,9 +5100,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -4926,6 +5149,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -4945,9 +5169,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -4992,6 +5218,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -5011,9 +5238,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -5058,6 +5287,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -5077,9 +5307,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -5124,6 +5356,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -5143,9 +5376,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -5190,6 +5425,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -5209,9 +5445,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -5256,9 +5494,11 @@
             13,
             9,
             17,
-            17
+            17,
+            null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -5284,6 +5524,7 @@
             null,
             null,
             14,
+            null,
             null,
             null,
             null,
@@ -5322,6 +5563,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -5341,9 +5583,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -5388,6 +5632,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -5399,6 +5644,7 @@
             8,
             11,
             16,
+            null,
             null,
             null,
             null,
@@ -5424,6 +5670,7 @@
             null,
             null,
             19,
+            null,
             null,
             null,
             null
@@ -5454,9 +5701,11 @@
             null,
             null,
             null,
-            null
+            null,
+            14
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -5476,6 +5725,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -5520,6 +5770,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -5539,9 +5790,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -5586,6 +5839,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -5605,9 +5859,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -5652,6 +5908,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -5671,9 +5928,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -5718,6 +5977,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -5737,6 +5997,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -5748,6 +6009,7 @@
             null,
             null,
             21,
+            null,
             null,
             null,
             null,
@@ -5784,6 +6046,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -5803,6 +6066,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -5810,6 +6074,7 @@
             null,
             null,
             14,
+            null,
             null,
             null,
             null,
@@ -5850,6 +6115,7 @@
             20,
             15,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -5868,6 +6134,7 @@
             null,
             null,
             16,
+            null,
             null,
             null
           ],
@@ -5888,7 +6155,8 @@
             24,
             12,
             null,
-            13
+            13,
+            24
           ]
         }
       }
@@ -5916,9 +6184,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -5949,6 +6219,7 @@
             null,
             null,
             21,
+            null,
             null,
             null,
             null,
@@ -5982,9 +6253,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -6008,6 +6281,7 @@
             null,
             null,
             18,
+            null,
             null,
             null,
             null,
@@ -6048,9 +6322,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -6074,6 +6350,7 @@
             null,
             null,
             19,
+            null,
             null,
             null,
             null,
@@ -6114,9 +6391,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -6152,6 +6431,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -6180,9 +6460,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -6218,6 +6500,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -6230,6 +6513,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -6265,9 +6549,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -6312,6 +6598,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -6331,9 +6618,11 @@
             null,
             null,
             12,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -6378,6 +6667,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -6386,6 +6676,7 @@
             null,
             12,
             12,
+            null,
             null,
             null,
             null,
@@ -6406,6 +6697,7 @@
             12,
             12,
             6,
+            null,
             null,
             null,
             null,
@@ -6444,6 +6736,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -6463,9 +6756,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -6510,6 +6805,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -6529,9 +6825,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -6576,6 +6874,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -6595,6 +6894,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -6603,6 +6903,7 @@
             null,
             7,
             7,
+            null,
             null,
             null,
             null,
@@ -6642,9 +6943,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -6669,6 +6972,7 @@
             null,
             3,
             3,
+            null,
             null,
             null,
             null,
@@ -6708,9 +7012,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -6737,6 +7043,7 @@
             4,
             null,
             7,
+            null,
             null,
             null,
             null,
@@ -6774,9 +7081,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -6801,6 +7110,7 @@
             null,
             20,
             20,
+            null,
             null,
             null,
             null,
@@ -6840,9 +7150,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -6869,6 +7181,7 @@
             21,
             null,
             22,
+            null,
             null,
             null,
             null,
@@ -6906,6 +7219,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -6925,9 +7239,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -6972,6 +7288,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -6991,9 +7308,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -7038,6 +7357,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -7057,9 +7377,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -7104,9 +7426,11 @@
             null,
             null,
             null,
-            null
+            null,
+            12
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -7126,6 +7450,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -7170,6 +7495,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -7189,9 +7515,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -7236,6 +7564,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -7255,9 +7584,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -7302,6 +7633,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -7321,9 +7653,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -7368,6 +7702,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -7387,9 +7722,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -7434,6 +7771,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -7447,6 +7785,7 @@
             2,
             2,
             16,
+            null,
             null,
             null,
             null,
@@ -7468,6 +7807,7 @@
             4,
             22,
             7,
+            null,
             null,
             null,
             null,
@@ -7500,9 +7840,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -7528,6 +7870,7 @@
             null,
             null,
             19,
+            null,
             null,
             null,
             null,
@@ -7566,9 +7909,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -7594,6 +7939,7 @@
             null,
             null,
             20,
+            null,
             null,
             null,
             null,
@@ -7632,6 +7978,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -7651,9 +7998,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -7698,7 +8047,8 @@
             9,
             6,
             5,
-            8
+            8,
+            6
           ],
           "kyobo_ebook": [
             null,
@@ -7717,6 +8067,7 @@
             17,
             12,
             1,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -7736,7 +8087,8 @@
             7,
             9,
             2,
-            12
+            12,
+            null
           ]
         }
       }
@@ -7764,6 +8116,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -7783,9 +8136,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -7830,9 +8185,11 @@
             null,
             null,
             13,
-            9
+            9,
+            11
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -7852,6 +8209,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -7896,6 +8254,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -7915,9 +8274,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -7962,9 +8323,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -8000,7 +8363,8 @@
             null,
             11,
             16,
-            17
+            17,
+            null
           ]
         }
       }
@@ -8012,6 +8376,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -8047,6 +8412,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -8064,6 +8430,7 @@
             null,
             null,
             17,
+            null,
             null,
             null,
             null
@@ -8094,9 +8461,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -8123,6 +8492,7 @@
             null,
             null,
             14,
+            null,
             null,
             null,
             null,
@@ -8160,9 +8530,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -8198,7 +8570,8 @@
             null,
             null,
             null,
-            22
+            22,
+            null
           ]
         }
       }
@@ -8210,6 +8583,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -8245,6 +8619,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -8255,6 +8630,7 @@
             null,
             null,
             18,
+            null,
             null,
             null,
             null,
@@ -8292,9 +8668,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -8330,7 +8708,8 @@
             8,
             null,
             23,
-            11
+            11,
+            null
           ]
         }
       }
@@ -8342,6 +8721,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -8377,6 +8757,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -8387,6 +8768,7 @@
             null,
             null,
             23,
+            null,
             null,
             null,
             null,
@@ -8424,9 +8806,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -8453,6 +8837,7 @@
             null,
             null,
             24,
+            null,
             null,
             null,
             null,
@@ -8490,6 +8875,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -8509,9 +8895,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -8556,6 +8944,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -8575,9 +8964,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -8622,6 +9013,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -8641,9 +9033,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -8688,6 +9082,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -8707,9 +9102,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -8754,6 +9151,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -8773,9 +9171,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -8820,6 +9220,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -8839,9 +9240,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -8886,6 +9289,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -8905,9 +9309,11 @@
             1,
             null,
             5,
-            4
+            4,
+            13
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -8952,6 +9358,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -8971,9 +9378,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -9018,6 +9427,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -9037,9 +9447,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -9084,9 +9496,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -9122,6 +9536,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -9134,6 +9549,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -9169,6 +9585,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -9180,6 +9597,7 @@
             null,
             null,
             13,
+            null,
             null,
             null,
             null,
@@ -9216,9 +9634,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -9246,6 +9666,7 @@
             null,
             null,
             16,
+            null,
             null,
             null,
             null,
@@ -9282,9 +9703,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -9320,6 +9743,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -9332,6 +9756,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -9367,6 +9792,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -9378,6 +9804,7 @@
             null,
             null,
             22,
+            null,
             null,
             null,
             null,
@@ -9414,6 +9841,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -9433,9 +9861,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -9480,6 +9910,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -9499,9 +9930,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -9546,6 +9979,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -9565,9 +9999,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -9612,6 +10048,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -9631,9 +10068,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -9678,9 +10117,11 @@
             null,
             null,
             null,
-            18
+            18,
+            null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -9700,6 +10141,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -9744,6 +10186,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -9763,9 +10206,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -9810,6 +10255,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -9829,9 +10275,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -9876,6 +10324,7 @@
             17,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -9895,9 +10344,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -9942,6 +10393,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -9961,9 +10413,11 @@
             7,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -10008,6 +10462,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -10027,9 +10482,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -10074,6 +10531,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -10093,9 +10551,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -10140,6 +10600,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -10159,9 +10620,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -10206,6 +10669,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -10225,6 +10689,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -10238,6 +10703,7 @@
             null,
             3,
             14,
+            null,
             null,
             null,
             null,
@@ -10272,9 +10738,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -10303,6 +10771,7 @@
             null,
             null,
             14,
+            null,
             null,
             null,
             null,
@@ -10338,9 +10807,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -10376,6 +10847,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -10404,9 +10876,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -10442,6 +10916,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -10470,9 +10945,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -10508,6 +10985,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -10536,6 +11014,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -10555,9 +11034,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -10602,6 +11083,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -10621,9 +11103,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -10668,6 +11152,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -10687,9 +11172,11 @@
             null,
             10,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -10734,6 +11221,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -10753,9 +11241,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -10800,9 +11290,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -10838,6 +11330,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -10866,6 +11359,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -10885,7 +11379,8 @@
             null,
             null,
             null,
-            20
+            20,
+            5
           ],
           "yes24_ebook": [
             null,
@@ -10904,7 +11399,8 @@
             null,
             null,
             null,
-            10
+            10,
+            2
           ]
         }
       }
@@ -10932,9 +11428,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -10970,6 +11468,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -10998,6 +11497,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -11017,9 +11517,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -11064,6 +11566,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -11083,9 +11586,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -11130,6 +11635,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -11149,7 +11655,8 @@
             5,
             2,
             11,
-            2
+            2,
+            6
           ],
           "yes24_ebook": [
             null,
@@ -11168,6 +11675,7 @@
             null,
             null,
             null,
+            20,
             20
           ]
         }
@@ -11180,6 +11688,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -11215,6 +11724,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -11234,6 +11744,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -11246,6 +11757,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -11281,9 +11793,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -11328,6 +11842,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -11345,6 +11860,7 @@
             18,
             12,
             20,
+            null,
             null,
             null,
             null
@@ -11366,7 +11882,8 @@
             13,
             null,
             22,
-            14
+            14,
+            null
           ]
         }
       }
@@ -11394,9 +11911,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -11432,6 +11951,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -11439,11 +11959,12 @@
     },
     "묵상과설교2026년910월호사사기야고보서시편1619편": {
       "title": "묵상과 설교 2026년 9-10월호(사사기, 야고보서, 시편 16-19편)",
-      "author": "성서유니온 편집부 저자 지음",
+      "author": "성서유니온선교회 편집부 저",
       "pub": "성서유니온",
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -11479,6 +12000,7 @@
             null,
             null,
             6,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -11498,7 +12020,8 @@
             22,
             15,
             null,
-            null
+            null,
+            9
           ]
         }
       }
@@ -11526,9 +12049,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -11564,6 +12089,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -11592,6 +12118,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -11611,9 +12138,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -11658,6 +12187,7 @@
             15,
             19,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -11677,9 +12207,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -11724,6 +12256,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -11743,9 +12276,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -11790,6 +12325,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -11809,9 +12345,11 @@
             10,
             null,
             null,
-            null
+            null,
+            18
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -11856,6 +12394,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -11875,9 +12414,11 @@
             2,
             6,
             4,
-            3
+            3,
+            2
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -11922,6 +12463,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -11941,9 +12483,11 @@
             16,
             null,
             19,
-            6
+            6,
+            3
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -11988,6 +12532,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -12007,9 +12552,11 @@
             null,
             null,
             null,
-            10
+            10,
+            8
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -12054,6 +12601,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -12073,9 +12621,11 @@
             4,
             4,
             2,
+            1,
             1
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -12120,6 +12670,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -12139,9 +12690,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -12186,9 +12739,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -12224,6 +12779,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -12252,9 +12808,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -12290,7 +12848,8 @@
             null,
             null,
             null,
-            9
+            9,
+            21
           ]
         }
       }
@@ -12318,9 +12877,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -12356,7 +12917,8 @@
             null,
             null,
             14,
-            null
+            null,
+            17
           ]
         }
       }
@@ -12384,9 +12946,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -12422,6 +12986,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -12450,9 +13015,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -12488,6 +13055,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -12516,9 +13084,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -12554,6 +13124,7 @@
             5,
             4,
             1,
+            1,
             1
           ]
         }
@@ -12582,9 +13153,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -12620,6 +13193,7 @@
             null,
             null,
             null,
+            23,
             23
           ]
         }
@@ -12648,9 +13222,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -12686,7 +13262,8 @@
             null,
             null,
             null,
-            24
+            24,
+            10
           ]
         }
       }
@@ -12714,9 +13291,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -12752,6 +13331,7 @@
             null,
             null,
             null,
+            null,
             null
           ]
         }
@@ -12780,6 +13360,7 @@
             2,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -12799,9 +13380,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -12846,6 +13429,7 @@
             3,
             18,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -12865,9 +13449,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -12912,6 +13498,7 @@
             5,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -12931,9 +13518,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -12978,6 +13567,7 @@
             10,
             20,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -12997,9 +13587,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -13044,6 +13636,7 @@
             12,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -13063,9 +13656,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -13110,9 +13705,11 @@
             18,
             null,
             12,
-            19
+            19,
+            null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -13132,6 +13729,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -13176,6 +13774,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -13195,9 +13794,11 @@
             8,
             null,
             null,
-            18
+            18,
+            10
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -13242,6 +13843,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -13261,9 +13863,11 @@
             11,
             null,
             14,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -13308,6 +13912,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -13327,9 +13932,11 @@
             13,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -13374,6 +13981,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -13393,9 +14001,11 @@
             15,
             null,
             null,
-            19
+            19,
+            9
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -13440,9 +14050,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -13478,6 +14090,7 @@
             2,
             null,
             null,
+            null,
             null
           ]
         }
@@ -13506,9 +14119,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -13544,6 +14159,7 @@
             6,
             3,
             null,
+            null,
             null
           ]
         }
@@ -13572,9 +14188,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -13610,6 +14228,7 @@
             11,
             null,
             null,
+            null,
             null
           ]
         }
@@ -13638,9 +14257,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -13676,7 +14297,8 @@
             12,
             18,
             13,
-            7
+            7,
+            3
           ]
         }
       }
@@ -13704,9 +14326,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -13742,7 +14366,8 @@
             15,
             14,
             3,
-            2
+            2,
+            5
           ]
         }
       }
@@ -13770,9 +14395,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -13808,7 +14435,8 @@
             16,
             null,
             null,
-            null
+            null,
+            19
           ]
         }
       }
@@ -13836,9 +14464,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -13874,6 +14504,7 @@
             18,
             null,
             null,
+            null,
             null
           ]
         }
@@ -13902,9 +14533,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -13940,7 +14573,8 @@
             20,
             7,
             7,
-            3
+            3,
+            4
           ]
         }
       }
@@ -13968,9 +14602,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -14006,7 +14642,8 @@
             21,
             null,
             4,
-            4
+            4,
+            7
           ]
         }
       }
@@ -14034,9 +14671,11 @@
             null,
             1,
             2,
-            7
+            7,
+            18
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -14056,6 +14695,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -14100,9 +14740,11 @@
             null,
             3,
             1,
-            null
+            null,
+            7
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -14122,6 +14764,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -14166,9 +14809,11 @@
             null,
             10,
             9,
-            13
+            13,
+            null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -14188,6 +14833,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -14232,9 +14878,11 @@
             null,
             16,
             8,
-            12
+            12,
+            null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -14254,6 +14902,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -14298,6 +14947,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -14317,6 +14967,7 @@
             null,
             7,
             9,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -14336,6 +14987,7 @@
             null,
             23,
             null,
+            null,
             null
           ]
         }
@@ -14348,6 +15000,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -14383,6 +15036,7 @@
             null,
             8,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -14402,6 +15056,7 @@
             null,
             5,
             null,
+            null,
             null
           ]
         }
@@ -14414,6 +15069,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -14449,6 +15105,7 @@
             null,
             9,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -14468,6 +15125,7 @@
             null,
             6,
             12,
+            null,
             null
           ]
         }
@@ -14480,6 +15138,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -14515,7 +15174,8 @@
             null,
             17,
             null,
-            null
+            null,
+            15
           ],
           "yes24_ebook": [
             null,
@@ -14534,7 +15194,8 @@
             null,
             null,
             null,
-            null
+            null,
+            16
           ]
         }
       }
@@ -14546,6 +15207,7 @@
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -14581,9 +15243,11 @@
             null,
             18,
             20,
-            8
+            8,
+            4
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -14628,9 +15292,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -14666,6 +15332,7 @@
             null,
             1,
             null,
+            null,
             null
           ]
         }
@@ -14694,9 +15361,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -14732,6 +15401,7 @@
             null,
             22,
             null,
+            null,
             null
           ]
         }
@@ -14760,6 +15430,7 @@
             null,
             null,
             7,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -14779,9 +15450,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -14826,6 +15499,7 @@
             null,
             null,
             15,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -14845,9 +15519,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -14892,9 +15568,11 @@
             null,
             null,
             18,
-            6
+            6,
+            9
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -14914,6 +15592,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -14958,6 +15637,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -14977,6 +15657,7 @@
             null,
             null,
             16,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -14996,6 +15677,7 @@
             null,
             null,
             21,
+            null,
             null
           ]
         }
@@ -15024,9 +15706,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -15062,6 +15746,7 @@
             null,
             null,
             10,
+            null,
             null
           ]
         }
@@ -15090,9 +15775,11 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -15128,6 +15815,7 @@
             null,
             null,
             20,
+            null,
             null
           ]
         }
@@ -15156,9 +15844,11 @@
             null,
             null,
             null,
-            2
+            2,
+            null
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -15178,6 +15868,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -15222,9 +15913,11 @@
             null,
             null,
             null,
-            4
+            4,
+            2
           ],
           "kyobo_ebook": [
+            null,
             null,
             null,
             null,
@@ -15244,6 +15937,7 @@
             null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -15288,6 +15982,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -15307,9 +16002,11 @@
             null,
             null,
             null,
-            11
+            11,
+            null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -15354,6 +16051,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "kyobo_ebook": [
@@ -15373,9 +16071,11 @@
             null,
             null,
             null,
-            16
+            16,
+            null
           ],
           "yes24_ebook": [
+            null,
             null,
             null,
             null,
@@ -15399,11 +16099,12 @@
     },
     "매일성경순2026년910월호사사기야고보서시편1619편": {
       "title": "매일성경 순 2026년 9-10월호(사사기, 야고보서, 시편 16-19편)",
-      "author": "성서유니온선교회 편집부 저",
+      "author": "성서유니온 편집부 저자 지음",
       "pub": "성서유니온",
       "series": {
         "all": {
           "kyobo_paper": [
+            null,
             null,
             null,
             null,
@@ -15439,6 +16140,76 @@
             null,
             null,
             null,
+            null,
+            12
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            18,
+            18
+          ]
+        }
+      }
+    },
+    "이한권의시집": {
+      "title": "이, 한 권의 시집",
+      "author": "나태주",
+      "pub": "샘터(샘터사)",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            5
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
             null
           ],
           "yes24_ebook": [
@@ -15458,7 +16229,422 @@
             null,
             null,
             null,
-            18
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "반골": {
+      "title": "반골",
+      "author": "권민창",
+      "pub": "모티브",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            17
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "브레인악셀": {
+      "title": "브레인악셀",
+      "author": "이진우",
+      "pub": "바른뇌연구소",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            20
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "startenglishebs방송교재2026년9월": {
+      "title": "START ENGLISH (EBS 방송교재 2026년 9월)",
+      "author": "케일린 신 지음",
+      "pub": "EBS한국교육방송공사",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            11
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "소설신인간혁명9": {
+      "title": "소설 신인간혁명. 9",
+      "author": "이케다 다이사쿠(池田大作)",
+      "pub": "화광신문사",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            20
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "ifrsprinciplesofaccountingsolutionswithkeywordsinkorean5thedition": {
+      "title": "IFRS PRINCIPLES OF ACCOUNTING SOLUTIONS with Keywords In Korean (5th Edition)",
+      "author": "윤순석 저 / 김효진, Grace Johnson 공역",
+      "pub": "신영사",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            14
+          ]
+        }
+      }
+    },
+    "소설신인간혁명제9권": {
+      "title": "소설 신인간혁명 제9권",
+      "author": "이케다 다이사쿠 저",
+      "pub": "화광신문사",
+      "series": {
+        "all": {
+          "kyobo_paper": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "kyobo_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "yes24_ebook": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            15
           ]
         }
       }
