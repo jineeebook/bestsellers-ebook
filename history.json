@@ -122468,7 +122468,7 @@
             7,
             null,
             null,
-            null
+            7
           ],
           "kyobo_ebook": [
             null,
@@ -123505,7 +123505,7 @@
     },
     "빨강의자서전": {
       "title": "빨강의 자서전",
-      "author": "앤 카슨",
+      "author": "앤 카슨 저/민승남 역",
       "pub": "한겨레출판",
       "series": {
         "all": {
@@ -123578,7 +123578,7 @@
             null,
             7,
             6,
-            7
+            null
           ],
           "kyobo_ebook": [
             null,
