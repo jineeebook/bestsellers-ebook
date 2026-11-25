@@ -1,6 +1,6 @@
 {
   "today": "2026-11-26",
-  "prev": "2026-11-25",
+  "prev": "2026-11-26",
   "surge_gap": 4,
   "categories": [
     {
@@ -12,10 +12,354 @@
     "all": {
       "books": [
         {
+          "isbn": "예약판매사카모토데이즈28뇌신",
+          "title": "예약판매사카모토 데이즈 28: 뇌신",
+          "author": "Yuto Suzuki",
+          "pub": "대원씨아이",
+          "kyobo_paper": {
+            "t": 1,
+            "pid": "S000222075285",
+            "ship": "12/11(금) 출고예정",
+            "p": null
+          },
+          "hkey": "예약판매사카모토데이즈28뇌신"
+        },
+        {
+          "isbn": "가호",
+          "title": "가호",
+          "author": "무라카미 하루키",
+          "pub": "문학동네",
+          "kyobo_paper": {
+            "t": 2,
+            "pid": "S000221505184",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "kyobo_ebook": {
+            "t": 6,
+            "pid": "E000013697650",
+            "ship": "",
+            "p": null
+          },
+          "yes24_ebook": {
+            "t": 7,
+            "pid": "198064587",
+            "ship": "",
+            "p": 7
+          },
+          "hkey": "가호"
+        },
+        {
+          "isbn": "서늘한대화",
+          "title": "서늘한 대화",
+          "author": "정재승",
+          "pub": "어크로스",
+          "kyobo_paper": {
+            "t": 3,
+            "pid": "S000221565159",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "kyobo_ebook": {
+            "t": 10,
+            "pid": "E000013756342",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "서늘한대화"
+        },
+        {
+          "isbn": "세네카오늘을빼앗기고있는당신에게",
+          "title": "세네카, 오늘을 빼앗기고 있는 당신에게",
+          "author": "세네카",
+          "pub": "논픽션",
+          "kyobo_paper": {
+            "t": 4,
+            "pid": "S000220308313",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "hkey": "세네카오늘을빼앗기고있는당신에게"
+        },
+        {
+          "isbn": "공부의종말",
+          "title": "공부의 종말",
+          "author": "로랑 알렉상드르 외",
+          "pub": "부키",
+          "kyobo_paper": {
+            "t": 5,
+            "pid": "S000221875921",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "kyobo_ebook": {
+            "t": 7,
+            "pid": "E000013812403",
+            "ship": "",
+            "p": null
+          },
+          "yes24_ebook": {
+            "t": 8,
+            "pid": "200690452",
+            "ship": "",
+            "p": 8
+          },
+          "hkey": "공부의종말"
+        },
+        {
+          "isbn": "착한아이는사실상처받고있다",
+          "title": "착한 아이는 사실 상처받고 있다",
+          "author": "매기 닉",
+          "pub": "페이지2북스",
+          "kyobo_paper": {
+            "t": 6,
+            "pid": "S000221582117",
+            "ship": "11/27(금) 출고예정",
+            "p": null
+          },
+          "hkey": "착한아이는사실상처받고있다"
+        },
+        {
+          "isbn": "싯다르타",
+          "title": "싯다르타",
+          "author": "헤르만 헤세",
+          "pub": "민음사",
+          "kyobo_paper": {
+            "t": 7,
+            "pid": "S000000620195",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "kyobo_ebook": {
+            "t": 9,
+            "pid": "E000003091058",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "싯다르타"
+        },
+        {
+          "isbn": "트렌드코리아2027",
+          "title": "트렌드 코리아 2027",
+          "author": "김난도 외",
+          "pub": "미래의창",
+          "kyobo_paper": {
+            "t": 8,
+            "pid": "S000221151022",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "yes24_ebook": {
+            "t": 5,
+            "pid": "197315922",
+            "ship": "",
+            "p": 5
+          },
+          "hkey": "트렌드코리아2027"
+        },
+        {
+          "isbn": "이게다일리가없다thisisnotall",
+          "title": "이게 다일 리가 없다(This is not All)",
+          "author": "고명환 외",
+          "pub": "논픽션",
+          "kyobo_paper": {
+            "t": 9,
+            "pid": "S000222022570",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "hkey": "이게다일리가없다thisisnotall"
+        },
+        {
+          "isbn": "주술회전모듈로3밝은미래",
+          "title": "주술회전 모듈로 3: 밝은 미래",
+          "author": "Gege Akutami",
+          "pub": "서울미디어코믹스(서울문화사)",
+          "kyobo_paper": {
+            "t": 10,
+            "pid": "S000222071876",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "hkey": "주술회전모듈로3밝은미래"
+        },
+        {
+          "isbn": "일일반출록",
+          "title": "일일 반출록",
+          "author": "성해나",
+          "pub": "무제(MUZE)",
+          "kyobo_paper": {
+            "t": 11,
+            "pid": "S000221810799",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "kyobo_ebook": {
+            "t": 20,
+            "pid": "E000013841221",
+            "ship": "",
+            "p": null
+          },
+          "yes24_ebook": {
+            "t": 19,
+            "pid": "201135457",
+            "ship": "",
+            "p": 19
+          },
+          "hkey": "일일반출록"
+        },
+        {
+          "isbn": "감정을다스리면인생이달라진다",
+          "title": "감정을 다스리면 인생이 달라진다",
+          "author": "데이비드 J. 리버만",
+          "pub": "북파머스",
+          "kyobo_paper": {
+            "t": 12,
+            "pid": "S000221889605",
+            "ship": "11/27(금) 출고예정",
+            "p": null
+          },
+          "kyobo_ebook": {
+            "t": 15,
+            "pid": "E000013874238",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "감정을다스리면인생이달라진다"
+        },
+        {
+          "isbn": "모순",
+          "title": "모순",
+          "author": "양귀자",
+          "pub": "쓰다",
+          "kyobo_paper": {
+            "t": 13,
+            "pid": "S000001632467",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "hkey": "모순"
+        },
+        {
+          "isbn": "기분이태도가되지않도록",
+          "title": "기분이 태도가 되지 않도록",
+          "author": "김지연",
+          "pub": "리미트리스",
+          "kyobo_paper": {
+            "t": 14,
+            "pid": "S000221936936",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "hkey": "기분이태도가되지않도록"
+        },
+        {
+          "isbn": "손자병법",
+          "title": "손자병법",
+          "author": "손자 외",
+          "pub": "어센딩",
+          "kyobo_paper": {
+            "t": 15,
+            "pid": "S000221950549",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "hkey": "손자병법"
+        },
+        {
+          "isbn": "마음의어휘력",
+          "title": "마음의 어휘력",
+          "author": "조아란 외",
+          "pub": "페이지2북스",
+          "kyobo_paper": {
+            "t": 16,
+            "pid": "S000220636999",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "yes24_ebook": {
+            "t": 20,
+            "pid": "196322100",
+            "ship": "",
+            "p": 20
+          },
+          "hkey": "마음의어휘력"
+        },
+        {
+          "isbn": "한국사이상현상연구원일반판",
+          "title": "한국사 이상현상 연구원(일반판)",
+          "author": "최인서",
+          "pub": "다이브",
+          "kyobo_paper": {
+            "t": 17,
+            "pid": "S000220693844",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "kyobo_ebook": {
+            "t": 14,
+            "pid": "E000013518299",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "한국사이상현상연구원일반판"
+        },
+        {
+          "isbn": "해커스토익기출voca보카",
+          "title": "해커스 토익 기출 VOCA(보카)",
+          "author": "David Cho",
+          "pub": "해커스어학연구소",
+          "kyobo_paper": {
+            "t": 18,
+            "pid": "S000001020219",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "hkey": "해커스토익기출voca보카"
+        },
+        {
+          "isbn": "데미안",
+          "title": "데미안",
+          "author": "헤르만 헤세",
+          "pub": "민음사",
+          "kyobo_paper": {
+            "t": 19,
+            "pid": "S000000620181",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "hkey": "데미안"
+        },
+        {
+          "isbn": "가짜돈진짜부",
+          "title": "가짜 돈 진짜 부",
+          "author": "박종훈",
+          "pub": "글로퍼스",
+          "kyobo_paper": {
+            "t": 20,
+            "pid": "S000221580226",
+            "ship": "오늘(목) 도착",
+            "p": null
+          },
+          "yes24_ebook": {
+            "t": 13,
+            "pid": "199074979",
+            "ship": "",
+            "p": 13
+          },
+          "hkey": "가짜돈진짜부"
+        },
+        {
           "isbn": "2027독끝sk하이닉스생산직maintenance/operatorskct최신기출분석모의고사",
           "title": "2027 독끝 SK하이닉스 생산직(Maintenance/Operator) SKCT 최신 기출분석 모의고사",
-          "author": "박수웅, 길자은",
+          "author": "박수웅, 길자은 지음",
           "pub": "애드투",
+          "kyobo_ebook": {
+            "t": 1,
+            "pid": "E000013849045",
+            "ship": "",
+            "p": null
+          },
           "yes24_ebook": {
             "t": 1,
             "pid": "201265936",
@@ -27,54 +371,176 @@
         {
           "isbn": "2027해커스sk하이닉스maintenance/operator온라인필기시험한권완성최신기출유형+실전모의고사",
           "title": "2027 해커스 SK하이닉스 Maintenance/Operator 온라인 필기시험 한권완성(최신기출유형+실전모의고사)",
-          "author": "해커스 SKCT 취업교육연구소 저",
+          "author": "해커스 SKCT 취업교육연구소 지음",
           "pub": "해커스잡",
+          "kyobo_ebook": {
+            "t": 2,
+            "pid": "E000013856606",
+            "ship": "",
+            "p": null
+          },
           "yes24_ebook": {
             "t": 2,
             "pid": "202172852",
             "ship": "",
-            "p": null
+            "p": 2
           },
           "hkey": "2027해커스sk하이닉스maintenance/operator온라인필기시험한권완성최신기출유형+실전모의고사"
         },
         {
-          "isbn": "2027고시넷sk하이닉스maintenance/operator최신기출유형모의고사",
-          "title": "2027 고시넷 SK하이닉스 Maintenance/Operator 최신기출유형 모의고사",
-          "author": "고시넷 인적성 연구소 편저",
+          "isbn": "2026고시넷sk하이닉스maintenance/operator온라인skct최신기출유형모의고사",
+          "title": "2026 고시넷 SK하이닉스 Maintenance/Operator 온라인 SKCT 최신기출유형 모의고사",
+          "author": "고시넷 인적성연구소",
           "pub": "고시넷",
-          "yes24_ebook": {
+          "kyobo_ebook": {
             "t": 3,
-            "pid": "201625757",
+            "pid": "E000012283860",
             "ship": "",
             "p": null
           },
-          "hkey": "2027고시넷sk하이닉스maintenance/operator최신기출유형모의고사"
-        },
-        {
-          "isbn": "2026고시넷sk하이닉스maintenance/operator온라인skct최신기출유형모의고사",
-          "title": "2026 고시넷 SK하이닉스 Maintenance/Operator 온라인 SKCT 최신기출유형 모의고사",
-          "author": "고시넷 인적성 연구소 편저",
-          "pub": "고시넷",
           "yes24_ebook": {
             "t": 4,
             "pid": "167670875",
             "ship": "",
-            "p": null
+            "p": 4
           },
           "hkey": "2026고시넷sk하이닉스maintenance/operator온라인skct최신기출유형모의고사"
         },
         {
-          "isbn": "트렌드코리아2027",
-          "title": "트렌드 코리아 2027",
-          "author": "김난도, 이준영, 이향은, 전미영, 최지혜 저 외 8명 정보 더 보기/감추기",
-          "pub": "미래의창",
-          "yes24_ebook": {
-            "t": 5,
-            "pid": "197315922",
+          "isbn": "2027고시넷sk하이닉스maintenance/operator최신기출유형모의고사",
+          "title": "2027 고시넷 SK하이닉스 Maintenance/Operator 최신기출유형 모의고사",
+          "author": "고시넷 인적성연구소 지음",
+          "pub": "고시넷",
+          "kyobo_ebook": {
+            "t": 4,
+            "pid": "E000013853912",
             "ship": "",
-            "p": 11
+            "p": null
           },
-          "hkey": "트렌드코리아2027"
+          "yes24_ebook": {
+            "t": 3,
+            "pid": "201625757",
+            "ship": "",
+            "p": 3
+          },
+          "hkey": "2027고시넷sk하이닉스maintenance/operator최신기출유형모의고사"
+        },
+        {
+          "isbn": "2027에듀윌sk하이닉스maintenance&operator실전모의고사+무료특강",
+          "title": "2027 에듀윌 SK하이닉스 Maintenance & Operator 실전모의고사+무료특강",
+          "author": "에듀윌 취업교육연구소 지음",
+          "pub": "에듀윌",
+          "kyobo_ebook": {
+            "t": 5,
+            "pid": "E000013860158",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "2027에듀윌sk하이닉스maintenance&operator실전모의고사+무료특강"
+        },
+        {
+          "isbn": "법련12월호2026년",
+          "title": "법련 12월호(2026년)",
+          "author": "화광신문사 출판국 법련부編 지음",
+          "pub": "화광신문사",
+          "kyobo_ebook": {
+            "t": 8,
+            "pid": "E000013849208",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "법련12월호2026년"
+        },
+        {
+          "isbn": "입이트이는영어ebs방송교재2026년12월",
+          "title": "입이 트이는 영어 (EBS 방송교재 2026년 12월)",
+          "author": "이현석, 제니퍼 클라이드 지음",
+          "pub": "EBS한국교육방송공사",
+          "kyobo_ebook": {
+            "t": 11,
+            "pid": "E000013872636",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "입이트이는영어ebs방송교재2026년12월"
+        },
+        {
+          "isbn": "easyenglishebs방송교재2026년12월",
+          "title": "EASY ENGLISH (EBS 방송교재 2026년 12월)",
+          "author": "이보영 지음",
+          "pub": "EBS한국교육방송공사",
+          "kyobo_ebook": {
+            "t": 12,
+            "pid": "E000013872746",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "easyenglishebs방송교재2026년12월"
+        },
+        {
+          "isbn": "powerenglishebs방송교재2026년12월",
+          "title": "POWER ENGLISH (EBS 방송교재 2026년 12월)",
+          "author": "크리스틴 조, 카메론 리 워드 지음",
+          "pub": "EBS한국교육방송공사",
+          "kyobo_ebook": {
+            "t": 13,
+            "pid": "E000013873061",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "powerenglishebs방송교재2026년12월"
+        },
+        {
+          "isbn": "옥스브리지의철학수업",
+          "title": "옥스브리지의 철학 수업",
+          "author": "고요엘 지음",
+          "pub": "상상스퀘어",
+          "kyobo_ebook": {
+            "t": 16,
+            "pid": "E000013528885",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "옥스브리지의철학수업"
+        },
+        {
+          "isbn": "2026시대에듀sk하이닉스고졸/전문대졸operator/maintenance온라인필기시험통합기본서",
+          "title": "2026 시대에듀 SK하이닉스 고졸/전문대졸 Operator/Maintenance 온라인 필기시험 통합기본서",
+          "author": "SDC 지음",
+          "pub": "시대고시기획",
+          "kyobo_ebook": {
+            "t": 17,
+            "pid": "E000013237607",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "2026시대에듀sk하이닉스고졸/전문대졸operator/maintenance온라인필기시험통합기본서"
+        },
+        {
+          "isbn": "서른부터시작하는투자수업",
+          "title": "서른부터 시작하는 투자 수업",
+          "author": "김송웅(투자대디) 지음",
+          "pub": "토네이도",
+          "kyobo_ebook": {
+            "t": 18,
+            "pid": "E000013865348",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "서른부터시작하는투자수업"
+        },
+        {
+          "isbn": "생각혁명",
+          "title": "생각 혁명",
+          "author": "김은철 지음",
+          "pub": "새사람혁명본부",
+          "kyobo_ebook": {
+            "t": 19,
+            "pid": "E000013869025",
+            "ship": "",
+            "p": null
+          },
+          "hkey": "생각혁명"
         },
         {
           "isbn": "2027에듀윌sk하이닉스maintenance&operator",
@@ -85,35 +551,9 @@
             "t": 6,
             "pid": "201618811",
             "ship": "",
-            "p": null
-          },
-          "hkey": "2027에듀윌sk하이닉스maintenance&operator"
-        },
-        {
-          "isbn": "가호",
-          "title": "가호",
-          "author": "무라카미 하루키 저/홍은주 역",
-          "pub": "문학동네",
-          "yes24_ebook": {
-            "t": 7,
-            "pid": "198064587",
-            "ship": "",
-            "p": 7
-          },
-          "hkey": "가호"
-        },
-        {
-          "isbn": "공부의종말",
-          "title": "공부의 종말",
-          "author": "조민영, 로랑 알렉상드르, 올리비에 바보 저",
-          "pub": "부키",
-          "yes24_ebook": {
-            "t": 8,
-            "pid": "200690452",
-            "ship": "",
             "p": 6
           },
-          "hkey": "공부의종말"
+          "hkey": "2027에듀윌sk하이닉스maintenance&operator"
         },
         {
           "isbn": "싯다르타세계문학전집58",
@@ -124,7 +564,7 @@
             "t": 9,
             "pid": "11932323",
             "ship": "",
-            "p": 2
+            "p": 9
           },
           "hkey": "싯다르타세계문학전집58"
         },
@@ -137,7 +577,7 @@
             "t": 10,
             "pid": "201611584",
             "ship": "",
-            "p": 19
+            "p": 10
           },
           "hkey": "퍼플필"
         },
@@ -150,35 +590,9 @@
             "t": 11,
             "pid": "202597635",
             "ship": "",
-            "p": null
+            "p": 11
           },
           "hkey": "ebs라디오입이트이는영어2026년12월호"
-        },
-        {
-          "isbn": "일일반출록",
-          "title": "일일 반출록",
-          "author": "성해나 저",
-          "pub": "무제",
-          "yes24_ebook": {
-            "t": 19,
-            "pid": "201135457",
-            "ship": "",
-            "p": 5
-          },
-          "hkey": "일일반출록"
-        },
-        {
-          "isbn": "가짜돈진짜부",
-          "title": "가짜 돈 진짜 부",
-          "author": "박종훈 저",
-          "pub": "글로퍼스",
-          "yes24_ebook": {
-            "t": 13,
-            "pid": "199074979",
-            "ship": "",
-            "p": null
-          },
-          "hkey": "가짜돈진짜부"
         },
         {
           "isbn": "2026에듀윌skct통합기본서",
@@ -189,7 +603,7 @@
             "t": 14,
             "pid": "182958763",
             "ship": "",
-            "p": null
+            "p": 14
           },
           "hkey": "2026에듀윌skct통합기본서"
         },
@@ -202,7 +616,7 @@
             "t": 15,
             "pid": "193186896",
             "ship": "",
-            "p": null
+            "p": 15
           },
           "hkey": "2026하반기시대에듀allnewsk하이닉스고졸/전문대졸온라인필기시험통합기본서"
         },
@@ -215,7 +629,7 @@
             "t": 16,
             "pid": "196784700",
             "ship": "",
-            "p": 3
+            "p": 16
           },
           "hkey": "인문논술벼락치기한양대학교2027"
         },
@@ -228,7 +642,7 @@
             "t": 17,
             "pid": "154212704",
             "ship": "",
-            "p": null
+            "p": 17
           },
           "hkey": "절창切創"
         },
@@ -241,22 +655,9 @@
             "t": 18,
             "pid": "202597636",
             "ship": "",
-            "p": null
+            "p": 18
           },
           "hkey": "ebs라디오귀가트이는영어2026년12월호"
-        },
-        {
-          "isbn": "마음의어휘력",
-          "title": "마음의 어휘력",
-          "author": "조아란, 권희, 이정윤 저",
-          "pub": "페이지2북스",
-          "yes24_ebook": {
-            "t": 20,
-            "pid": "196322100",
-            "ship": "",
-            "p": null
-          },
-          "hkey": "마음의어휘력"
         },
         {
           "isbn": "인생을위한최소한의생각",
@@ -267,7 +668,7 @@
             "t": 21,
             "pid": "180332361",
             "ship": "",
-            "p": null
+            "p": 21
           },
           "hkey": "인생을위한최소한의생각"
         },
@@ -280,7 +681,7 @@
             "t": 22,
             "pid": "7290386",
             "ship": "",
-            "p": null
+            "p": 22
           },
           "hkey": "데미안세계문학전집044"
         },
@@ -293,7 +694,7 @@
             "t": 23,
             "pid": "202597633",
             "ship": "",
-            "p": null
+            "p": 23
           },
           "hkey": "ebs라디오powerenglish2026년12월호"
         },
@@ -306,7 +707,7 @@
             "t": 24,
             "pid": "147709913",
             "ship": "",
-            "p": null
+            "p": 24
           },
           "hkey": "안녕이라그랬어"
         }
